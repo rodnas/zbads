@@ -1,0 +1,118 @@
+##inputForm##
+<div id="contentFrame">
+	<div id="itemTitle" style="width:100px;">
+		<label title="{$config[adgroup_advertiserIDTitle]}">{$config[adgroup_advertiserIDTitle]}</label>
+	</div>
+	<div id="itemView">
+		<select name="x_advertiserID">{$config[adgroup_advertiser]}</select>
+	</div>
+	<div style="clear:both;height: 1px;"></div>
+	<div id="itemTitle" style="width:100px;">
+		<label title="{$config[adgroup_siteIDTitle]}">{$config[adgroup_siteIDTitle]}</label>
+	</div>
+	<div id="itemView">
+		<select name="x_siteID">{$config[adgroup_site]}</select>
+	</div>
+	<div style="clear:both;height: 1px;"></div>
+	<div id="itemTitle" style="width:100px;">
+		<label title="{$config[adgroup_nameTitle]}">{$config[adgroup_nameTitle]}</label>
+	</div>
+	<div id="itemView">
+		<input type="text" name="x_name" size="62" maxlength="100" value="{$config[adgroup_x_name]}">&nbsp;
+		{$config[adgroup_x_name_Error]}
+	</div>
+	<div style="clear:both;height: 1px;"></div>
+<adgroup_x_description>
+	<div id="itemLineTitle">
+		<label title="{$config[adgroup_descriptionTitle]}">{$config[adgroup_descriptionTitle]}</label>
+	</div>
+	<div style="clear:both;height: 1px;"></div>
+	<div valign="center" style="background:white;">
+		<textarea id="x_description" name="x_description">{$config[adgroup_x_description]}</textarea>
+		<script language="javascript1.2" type="text/javascript">generate_wysiwyg("x_description",740,200);</script>
+	</div>
+	<div style="clear:both;height: 1px;"></div>
+</adgroup_x_description>
+<adgroup_x_langID>
+	<div id="itemTitle" style="width:100px;">
+		<label title="{$config[adgroup_langTitle]}">{$config[adgroup_langTitle]}</label>
+	</div>
+	<div id="itemView">
+		<select style="width:50;" name="x_langID">{$config[adgroup_lang]}</select>
+	</div>
+	<div style="clear:both;height: 1px;"></div>
+</adgroup_x_langID>
+</div>
+##/inputForm##
+##viewForm##
+<div id="contentFrame">
+	<div id="itemTitle" style="width:100px;">
+		<label title="{$config[adgroup_advertiserIDTitle]}">{$config[adgroup_advertiserIDTitle]}</label>
+	</div>
+	<div id="itemView">
+		{$config[adgroup_advertiser]}
+	</div>
+	<div style="clear:both;height: 1px;"></div>
+	<div id="itemTitle" style="width:100px;">
+		<label title="{$config[adgroup_siteIDTitle]}">{$config[adgroup_siteIDTitle]}</label>
+	</div>
+	<div id="itemView">
+		{$config[adgroup_site]}
+	</div>
+	<div style="clear:both;height: 1px;"></div>
+	<div id="itemTitle" style="width:100px;">
+		<label title="{$config[adgroup_nameTitle]}">{$config[adgroup_nameTitle]}</label>
+	</div>
+	<div id="itemView">
+		{$config[adgroup_x_name]}&nbsp;
+	</div>
+	<div style="clear:both;height: 1px;"></div>
+<adgroup_x_description>
+	<div id="itemLineTitle">
+		<label title="{$config[adgroup_descriptionTitle]}">{$config[adgroup_descriptionTitle]}</label>
+	</div>
+	<div style="clear:both;height: 1px;"></div>
+	<div style="float:left;text-align:left;">
+		{$config[adgroup_x_description]}
+	</div>
+	<div style="clear:both;height: 1px;"></div>
+</adgroup_x_description>
+<adgroup_x_langID>
+	<div id="itemTitle" style="width:100px;">
+		<label title="{$config[adgroup_langTitle]}">{$config[adgroup_langTitle]}</label>
+	</div>
+	<div id="itemView">
+		{$config[adgroup_lang]}
+	</div>
+	<div style="clear:both;height: 1px;"></div>
+</adgroup_x_langID>
+</div>
+##/viewForm##
+##listHeadForm##
+<div id="listHeader">
+	<div id="itemView" style="width:200px;">{$config[adgroup_nameTitle]}</div>
+<adgroup_x_insertWhen>
+	<div id="itemView" style="width:200px;">{$config[adgroup_insertWhenTitle]}</div>
+</adgroup_x_insertWhen>
+	<div id="itemView" style="width:40px;">{$config[adgroup_activeTitle]}</div>
+<adgroup_x_langID>
+	<div id="itemView" style="width:70px;">{$config[adgroup_langTitle]}</div>
+</adgroup_x_langID>
+	<div id="itemView" style="width:1750px;"></div>
+	<div style="clear:both;height: 1px;"></div>
+</div>
+##/listHeadForm##
+##listItemForm##
+<div id="listItem" class="{$config[adgroup_bgcolor]}">
+	<div id="itemView" style="width:200px;">{$config[adgroup_x_name]}</div>
+<adgroup_x_insertWhen>
+	<div id="itemView" style="width:200px;">{$config[adgroup_x_insertWhen]}</div>
+</adgroup_x_insertWhen>
+	<div id="itemView" style="width:40px;">{$config[adgroup_x_active]}</div>
+<adgroup_x_langID>
+	<div id="itemView" style="width:70px;">{$config[adgroup_x_lang]}</div>
+</adgroup_x_langID>
+	<div id="itemViewRight" style="width:170px;">{$config[adgroup_x_submenu]}</div>
+	<div style="clear:both;height: 1px;"></div>
+</div>
+##/listItemForm##

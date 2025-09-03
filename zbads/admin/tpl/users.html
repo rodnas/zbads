@@ -1,0 +1,201 @@
+##inputForm##
+<div id="contentFrame">
+	<div id="itemTitle" style="width:150px;">
+		<label title="{$config[users_usertitleTitle]}">{$config[users_usertitleTitle]}</label>
+	</div>
+	<div id="itemView">
+		<select style="width:100;" name="x_usertitleID">{$config[users_usertitle]}</select>
+	</div>
+	<div style="clear:both;height: 1px;"></div>
+	<div id="itemTitle" style="width:150px;">
+		<label title="{$config[users_surnameTitle]}">{$config[users_surnameTitle]}</label>
+	</div>
+	<div id="itemView">
+		<input type="text" name="x_surname" size="42" maxlength="40" value="{$config[users_x_surname]}">&nbsp;
+		{$config[users_x_surname_Error]}
+	</div>
+	<div style="clear:both;height: 1px;"></div>
+	<div id="itemTitle" style="width:150px;">
+		<label title="{$config[users_forenameTitle]}">{$config[users_forenameTitle]}</label>
+	</div>
+	<div id="itemView">
+		<input type="text" name="x_forename" size="42" maxlength="40" value="{$config[users_x_forename]}">&nbsp;
+		{$config[users_x_forename_Error]}
+	</div>
+	<div style="clear:both;height: 1px;"></div>
+	<div id="itemTitle" style="width:150px;">
+		<label title="{$config[users_emailTitle]}">{$config[users_emailTitle]}</label>
+	</div>
+	<div id="itemView">
+		<input type="text" name="x_email" size="42" maxlength="40" value="{$config[users_x_email]}">&nbsp;
+		{$config[users_x_email_Error]}
+	</div>
+	<div style="clear:both;height: 1px;"></div>
+	<div id="itemTitle" style="width:150px;">
+		<label title="{$config[users_nicknameTitle]}">{$config[users_nicknameTitle]}</label>
+	</div>
+	<div id="itemView">
+		<input type="text" name="x_nickname" size="42" maxlength="40" value="{$config[users_x_nickname]}">&nbsp;
+		{$config[users_x_nickname_Error]}
+	</div>
+	<div style="clear:both;height: 1px;"></div>
+<users_x_password>
+	<div id="itemTitle" style="width:150px;">
+		<label title="{$config[users_passwordTitle]}">{$config[users_passwordTitle]}</label>
+	</div>
+	<div id="itemView">
+		<input type="password" name="x_password" size="40" maxlength="" value="{$config[users_x_password]}">
+		{$config[users_x_password_Error]}
+	</div>
+	<div style="clear:both;height: 1px;"></div>
+</users_x_password>
+<users_x_password2>
+	<div id="itemTitle" style="width:150px;">
+		<label title="{$config[users_password2Title]}">{$config[users_password2Title]}</label>
+	</div>
+	<div id="itemView">
+		<input type="password" name="x_password2" size="40" maxlength="" value="{$config[users_x_password2]}">
+		{$config[users_x_password2_Error]}
+	</div>
+	<div style="clear:both;height: 1px;"></div>
+</users_x_password2>
+	<div id="itemTitle" style="width:150px;">
+		<label title="{$config[users_groupsTitle]}">{$config[users_groupsTitle]}</label>
+	</div>
+	<div id="itemView">
+		<select style="width:100;" name="x_groupsID">{$config[users_groups]}</select>
+	</div>
+	<div style="clear:both;height: 1px;"></div>
+<users_x_newsletter>
+	<div id="itemTitle" style="width:150px;">
+		<label title="{$config[users_newsletterTitle]}">{$config[users_newsletterTitle]}</label>
+	</div>
+	<div id="itemView">
+		<INPUT NAME="x_newsletter" TYPE="checkbox" {$config[users_x_newsletter]}>
+	</div>
+	<div style="clear:both;height: 1px;"></div>
+</users_x_newsletter>
+<users_x_description>
+	<div id="itemLineTitle">
+		<label title="{$config[users_descriptionTitle]}">{$config[users_descriptionTitle]}</label>
+	</div>
+	<div style="clear:both;height: 1px;"></div>
+	<div valign="center" style="background:white;">
+		<textarea id="x_description" name="x_description">{$config[users_x_description]}</textarea>
+		<script language="javascript1.2" type="text/javascript">generate_wysiwyg("x_description",740,200);</script>
+	</div>
+	<div style="clear:both;height: 1px;"></div>
+</users_x_description>
+<users_x_langID>
+	<div id="itemTitle" style="width:150px;">
+		<label title="{$config[users_langTitle]}">{$config[users_langTitle]}</label>
+	</div>
+	<div id="itemView">
+		<select style="width:50;" name="x_langID">{$config[users_lang]}</select>
+	</div>
+	<div style="clear:both;height: 1px;"></div>
+</users_x_langID>
+</div>
+##/inputForm##
+##viewForm##
+<div id="contentFrame">
+	<div id="itemTitle" style="width:150px;">
+		<label title="{$config[users_usertitleTitle]}">{$config[users_usertitleTitle]}</label>
+	</div>
+	<div id="itemView">
+		{$config[users_usertitle]}
+	</div>
+	<div style="clear:both;height: 1px;"></div>
+	<div id="itemTitle" style="width:150px;">
+		<label title="{$config[users_surnameTitle]}">{$config[users_surnameTitle]}</label>
+	</div>
+	<div id="itemView">
+		{$config[users_x_surname]}&nbsp;
+	</div>
+	<div style="clear:both;height: 1px;"></div>
+	<div id="itemTitle" style="width:150px;">
+		<label title="{$config[users_forenameTitle]}">{$config[users_forenameTitle]}</label>
+	</div>
+	<div id="itemView">
+		{$config[users_x_forename]}&nbsp;
+	</div>
+	<div style="clear:both;height: 1px;"></div>
+	<div id="itemTitle" style="width:150px;">
+		<label title="{$config[users_emailTitle]}">{$config[users_emailTitle]}</label>
+	</div>
+	<div id="itemView">
+		{$config[users_x_email]}&nbsp;
+	</div>
+	<div style="clear:both;height: 1px;"></div>
+	<div id="itemTitle" style="width:150px;">
+		<label title="{$config[users_nicknameTitle]}">{$config[users_nicknameTitle]}</label>
+	</div>
+	<div id="itemView">
+		{$config[users_x_nickname]}&nbsp;
+	</div>
+	<div style="clear:both;height: 1px;"></div>
+	<div id="itemTitle" style="width:150px;">
+		<label title="{$config[users_groupsTitle]}">{$config[users_groupsTitle]}</label>
+	</div>
+	<div id="itemView">
+		{$config[users_groups]}
+	</div>
+	<div style="clear:both;height: 1px;"></div>
+	<div id="itemTitle" style="width:150px;">
+		<label title="{$config[users_newsletterTitle]}">{$config[users_newsletterTitle]}</label>
+	</div>
+	<div id="itemView">
+		{$config[users_x_newsletter]}
+	</div>
+	<div style="clear:both;height: 1px;"></div>
+<users_x_description>
+	<div id="itemLineTitle">
+		<label title="{$config[users_descriptionTitle]}">{$config[users_descriptionTitle]}</label>
+	</div>
+	<div style="clear:both;height: 1px;"></div>
+	<div id="itemView">
+		{$config[users_x_description]}
+	</div>
+	<div style="clear:both;height: 1px;"></div>
+</users_x_description>
+<users_x_langID>
+	<div id="itemTitle" style="width:150px;">
+		<label title="{$config[users_langTitle]}">{$config[users_langTitle]}</label>
+	</div>
+	<div id="itemView">
+		{$config[users_lang]}
+	</div>
+	<div style="clear:both;height: 1px;"></div>
+</users_x_langID>
+</div>
+##/viewForm##
+##listHeadForm##
+<div id="listHeader">
+	<div id="itemView" style="width:120px;">{$config[users_nicknameTitle]}</div>
+	<div id="itemView" style="width:120px;">{$config[users_groupsTitle]}</div>
+<users_x_insertWhen>
+	<div id="itemView" style="width:160px;">{$config[users_insertWhenTitle]}</div>
+</users_x_insertWhen>
+	<div id="itemView" style="width:40px;">{$config[users_activeTitle]}</div>
+<users_x_langID>
+	<div id="itemView" style="width:70px;">{$config[users_langTitle]}</div>
+</users_x_langID>
+	<div id="itemView" style="width:170px;"></div>
+	<div style="clear:both;height: 1px;"></div>
+</div>
+##/listHeadForm##
+##listItemForm##
+<div id="listItem" class="{$config[users_bgcolor]}">
+	<div id="itemView" style="width:120px;">{$config[users_x_nickname]}</div>
+	<div id="itemView" style="width:120px;">{$config[users_x_groups]}</div>
+<users_x_insertWhen>
+	<div id="itemView" style="width:160px;">{$config[users_x_insertWhen]}</div>
+</users_x_insertWhen>
+	<div id="itemView" style="width:40px;">{$config[users_x_active]}</div>
+<users_x_langID>
+	<div id="itemView" style="width:70px;">{$config[users_x_lang]}</div>
+</users_x_langID>
+	<div id="itemViewRight" style="width:170px;">{$config[users_x_submenu]}</div>
+	<div style="clear:both;height: 1px;"></div>
+</div>
+##/listItemForm##

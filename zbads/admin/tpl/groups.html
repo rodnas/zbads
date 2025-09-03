@@ -1,0 +1,90 @@
+##inputForm##
+<div id="contentFrame">
+	<div id="itemTitle" style="width:100px;">
+		<label title="{$config[groups_nameTitle]}">{$config[groups_nameTitle]}</label>
+	</div>
+	<div id="itemView">
+		<input type="text" name="x_name" size="62" maxlength="100" value="{$config[groups_x_name]}">&nbsp;
+		{$config[groups_x_name_Error]}
+	</div>
+	<div style="clear:both;height: 1px;"></div>
+<groups_x_description>
+	<div id="itemLineTitle">
+		<label title="{$config[groups_descriptionTitle]}">{$config[groups_descriptionTitle]}</label>
+	</div>
+	<div style="clear:both;height: 1px;"></div>
+	<div valign="center" style="background:white;">
+		<textarea id="x_description" name="x_description">{$config[groups_x_description]}</textarea>
+		<script language="javascript1.2" type="text/javascript">generate_wysiwyg("x_description",740,200);</script>
+	</div>
+	<div style="clear:both;height: 1px;"></div>
+</groups_x_description>
+<groups_x_langID>
+	<div id="itemTitle" style="width:100px;">
+		<label title="{$config[groups_langTitle]}">{$config[groups_langTitle]}</label>
+	</div>
+	<div id="itemView">
+		<select style="width:50;" name="x_langID">{$config[groups_lang]}</select>
+	</div>
+	<div style="clear:both;height: 1px;"></div>
+</groups_x_langID>
+</div>
+##/inputForm##
+##viewForm##
+<div id="contentFrame">
+	<div id="itemTitle" style="width:100px;">
+		<label title="{$config[groups_nameTitle]}">{$config[groups_nameTitle]}</label>
+	</div>
+	<div id="itemView">
+		{$config[groups_x_name]}&nbsp;
+	</div>
+	<div style="clear:both;height: 1px;"></div>
+<groups_x_description>
+	<div id="itemLineTitle">
+		<label title="{$config[groups_descriptionTitle]}">{$config[groups_descriptionTitle]}</label>
+	</div>
+	<div style="clear:both;height: 1px;"></div>
+	<div id="itemView">
+		{$config[groups_x_description]}
+	</div>
+	<div style="clear:both;height: 1px;"></div>
+</groups_x_description>
+<groups_x_langID>
+	<div id="itemTitle" style="width:100px;">
+		<label title="{$config[groups_langTitle]}">{$config[groups_langTitle]}</label>
+	</div>
+	<div id="itemView">
+		{$config[groups_lang]}
+	</div>
+	<div style="clear:both;height: 1px;"></div>
+</groups_x_langID>
+</div>
+##/viewForm##
+##listHeadForm##
+<div id="listHeader">
+	<div id="itemView" style="width:200px;">{$config[groups_nameTitle]}</div>
+<groups_x_insertWhen>
+	<div id="itemView" style="width:200px;">{$config[groups_insertWhenTitle]}</div>
+</groups_x_insertWhen>
+	<div id="itemView" style="width:40px;">{$config[groups_activeTitle]}</div>
+<groups_x_langID>
+	<div id="itemView" style="width:70px;">{$config[groups_langTitle]}</div>
+</groups_x_langID>
+	<div id="itemView" style="width:170px;"></div>
+	<div style="clear:both;height: 1px;"></div>
+</div>
+##/listHeadForm##
+##listItemForm##
+<div id="listItem" class="{$config[groups_bgcolor]}">
+	<div id="itemView" style="width:200px;">{$config[groups_x_name]}</div>
+<groups_x_insertWhen>
+	<div id="itemView" style="width:200px;">{$config[groups_x_insertWhen]}</div>
+</groups_x_insertWhen>
+	<div id="itemView" style="width:40px;">{$config[groups_x_active]}</div>
+<groups_x_langID>
+	<div id="itemView" style="width:70px;">{$config[groups_x_lang]}</div>
+</groups_x_langID>
+	<div id="itemViewRight" style="width:170px;">{$config[groups_x_submenu]}</div>
+	<div style="clear:both;height: 1px;"></div>
+</div>
+##/listItemForm##

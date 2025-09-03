@@ -1,0 +1,133 @@
+##inputForm##
+<div id="contentFrame">
+	<div id="itemTitle" style="width:100px;">
+		<label title="{$config[themes_nameTitle]}">{$config[themes_nameTitle]}</label>
+	</div>
+	<div id="itemView">
+		<input type="text" name="x_name" size="62" maxlength="100" value="{$config[themes_x_name]}">&nbsp;
+	</div>
+	<div style="clear:both;height: 1px;"></div>
+	<div id="itemTitle" style="width:100px;">
+		<label title="{$config[themes_bgcolorTitle]}">{$config[themes_bgcolorTitle]}</label>
+	</div>
+	<div id="itemView">
+		<input type="text" name="x_bgcolor" size="10" maxlength="10" value="{$config[themes_x_bgcolor]}">&nbsp;
+	</div>
+	<div style="clear:both;height: 1px;"></div>
+	<div id="itemTitle" style="width:100px;">
+		<label title="{$config[themes_fgcolorTitle]}">{$config[themes_fgcolorTitle]}</label>
+	</div>
+	<div id="itemView">
+		<input type="text" name="x_fgcolor" size="10" maxlength="10" value="{$config[themes_x_fgcolor]}">&nbsp;
+	</div>
+	<div style="clear:both;height: 1px;"></div>
+	<div id="itemTitle" style="width:100px;">
+		<label title="{$config[themes_pathTitle]}">{$config[themes_pathTitle]}</label>
+	</div>
+	<div id="itemView">
+		<input type="text" name="x_path" size="62" maxlength="100" value="{$config[themes_x_path]}">&nbsp;
+	</div>
+	<div style="clear:both;height: 1px;"></div>
+	<div id="itemLineTitle">
+		<label title="{$config[themes_descriptionTitle]}">{$config[themes_descriptionTitle]}</label>
+	</div>
+	<div style="clear:both;height: 1px;"></div>
+	<div valign="center" style="background:white;">
+		<textarea id="x_description" name="x_description">{$config[themes_x_description]}</textarea>
+		<script language="javascript1.2" type="text/javascript">generate_wysiwyg("x_description",740,200);</script>
+	</div>
+	<div style="clear:both;height: 1px;"></div>
+	<div id="itemTitle" style="width:100px;">
+		<label title="{$config[themes_langTitle]}">{$config[themes_langTitle]}</label>
+	</div>
+	<div id="itemView">
+		<select style="width:50;" name="x_langID">{$config[themes_lang]}</select>
+	</div>
+	<div style="clear:both;height: 1px;"></div>
+</div>
+##/inputForm##
+##viewForm##
+<div id="contentFrame">
+	<div id="itemTitle" style="width:100px;">
+		<label title="{$config[themes_nameTitle]}">{$config[themes_nameTitle]}</label>
+	</div>
+	<div id="itemView">
+		{$config[themes_x_name]}&nbsp;
+	</div>
+	<div style="clear:both;height: 1px;"></div>
+	<div id="itemTitle" style="width:100px;">
+		<label title="{$config[themes_bgcolorTitle]}">{$config[themes_bgcolorTitle]}</label>
+	</div>
+	<div id="itemView">
+		{$config[themes_x_bgcolor]}&nbsp;
+	</div>
+	<div style="clear:both;height: 1px;"></div>
+	<div id="itemTitle" style="width:100px;">
+		<label title="{$config[themes_fgcolorTitle]}">{$config[themes_fgcolorTitle]}</label>
+	</div>
+	<div id="itemView">
+		{$config[themes_x_fgcolor]}&nbsp;
+	</div>
+	<div style="clear:both;height: 1px;"></div>
+	<div id="itemTitle" style="width:100px;">
+		<label title="{$config[themes_pathTitle]}">{$config[themes_pathTitle]}</label>
+	</div>
+	<div id="itemView">
+		{$config[themes_x_path]}&nbsp;
+	</div>
+	<div style="clear:both;height: 1px;"></div>
+<themes_x_description>
+	<div id="itemLineTitle">
+		<label title="{$config[themes_descriptionTitle]}">{$config[themes_descriptionTitle]}</label>
+	</div>
+	<div style="clear:both;height: 1px;"></div>
+	<div id="itemView">
+		{$config[themes_x_description]}
+	</div>
+	<div style="clear:both;height: 1px;"></div>
+</themes_x_description>
+<themes_x_langID>
+	<div id="itemTitle" style="width:100px;">
+		<label title="{$config[themes_langTitle]}">{$config[themes_langTitle]}</label>
+	</div>
+	<div id="itemView">
+		{$config[themes_lang]}
+	</div>
+	<div style="clear:both;height: 1px;"></div>
+</themes_x_langID>
+</div>
+##/viewForm##
+##listHeadForm##
+<div id="listHeader">
+	<div id="itemView" style="width:100px;">{$config[themes_nameTitle]}</div>
+	<div id="itemView" style="width:100px;">{$config[themes_pathTitle]}</div>
+	<div id="itemView" style="width:100px;">{$config[themes_bgcolorTitle]}</div>
+	<div id="itemView" style="width:100px;">{$config[themes_fgcolorTitle]}</div>
+<themes_x_insertWhen>
+	<div id="itemView" style="width:150px;">{$config[themes_insertWhenTitle]}</div>
+</themes_x_insertWhen>
+	<div id="itemView" style="width:40px;">{$config[themes_activeTitle]}</div>
+<themes_x_langID>
+	<div id="itemView" style="width:70px;">{$config[themes_langTitle]}</div>
+</themes_x_langID>
+	<div id="itemView" style="width:170px;"></div>
+	<div style="clear:both;height: 1px;"></div>
+</div>
+##/listHeadForm##
+##listItemForm##
+<div id="listItem" style="background-color:{$config[themes_x_bgcolor]};color:{$config[themes_x_fgcolor]};">
+	<div id="itemView" style="width:100px;">{$config[themes_x_name]}</div>
+	<div id="itemView" style="width:100px;">{$config[themes_x_path]}</div>
+	<div id="itemView" style="width:100px;">{$config[themes_x_bgcolor]}</div>
+	<div id="itemView" style="width:100px;">{$config[themes_x_fgcolor]}</div>
+<themes_x_insertWhen>
+	<div id="itemView" style="width:150px;">{$config[themes_x_insertWhen]}</div>
+</themes_x_insertWhen>
+	<div id="itemView" style="width:40px;">{$config[themes_x_active]}</div>
+<themes_x_langID>
+	<div id="itemView" style="width:70px;">{$config[themes_x_lang]}</div>
+</themes_x_langID>
+	<div id="itemViewRight" style="width:170px;">{$config[themes_x_submenu]}</div>
+	<div style="clear:both;height: 1px;"></div>
+</div>
+##/listItemForm##

@@ -1,0 +1,56 @@
+##listForm##
+<div id="navigationBox">
+	<form name="navigation">
+	##START##config#navigationHTML##STOP##
+	</form>
+</div>
+<div id="navigationAddBox">
+	<form name="navigationAdd" method="post">
+	##START##config#navigationAddHTML##STOP##
+	</form>
+</div>
+<div style="clear:both;height: 1px;"></div>
+<form method="post" name="##START##config#modulAction##STOP##form" action="index.php?modulAction=list">
+	<div id='contentFrame'>##START##config#contentListHTML##STOP##</div>
+</form>
+<div id="navigationBox">
+	<form name="navigation">
+	##START##config#navigationHTML##STOP##
+	</form>
+</div>
+<div id="navigationAddBox">
+	<form name="navigationAdd" method="post">
+	##START##config#navigationAddHTML##STOP##
+	</form>
+</div>
+<div style="clear:both;height: 1px;"></div>
+##/listForm##
+##addForm##
+<form onSubmit="" enctype="multipart/form-data" method="post" name="##START##config#modulAction##STOP##form" action="?">
+<input type="hidden" name="a" value="##START##config#getAction##STOP##">
+<input type="hidden" name="fieldFocus" value="##START##config#x_fieldFocus##STOP##">
+<input type="hidden" name="key" value="##START##itemValues#x_id##STOP##">
+<input type="hidden" name="x_id" value="##START##itemValues#x_id##STOP##">
+<input type="hidden" name="x_whichModul" value="##START##config#whichModul##STOP##">
+##START##config#contentAddHTML##STOP##
+##START##config#navigationHTML##STOP##
+</form>
+##/addForm##
+##editForm##
+<form onSubmit="" enctype="multipart/form-data" method="post" name="##START##config#modulAction##STOP##form" action="?">
+<input type="hidden" name="a" value="##START##config#getAction##STOP##">
+<input type="hidden" name="fieldFocus" value="##START##config#x_fieldFocus##STOP##">
+<input type="hidden" name="key" value="##START##itemValues#x_id##STOP##">
+<input type="hidden" name="x_id" value="##START##itemValues#x_id##STOP##">
+##START##config#contentEditHTML##STOP##
+##START##config#navigationHTML##STOP##
+</form>
+##/editForm##
+##viewForm##
+<form onSubmit="" enctype="multipart/form-data" method="post" name="##START##config#modulAction##STOP##form" action="?">
+<input type="hidden" name="a" value="##START##config#getAction##STOP##">
+<input type="hidden" name="key" value="##START##config#key##STOP##">
+##START##config#contentViewHTML##STOP##
+##START##config#navigationHTML##STOP##
+</form>
+##/viewForm##

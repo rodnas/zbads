@@ -1,0 +1,92 @@
+##inputForm##
+<div id="contentFrame">
+	<noVisible>
+	<div id="itemTitle" style="width:100px;">
+		<label title="{$config[usertitle_nameTitle]}">{$config[usertitle_nameTitle]}</label>
+	</div>
+	</noVisible>
+	<div id="itemView">
+		<input type="text" name="x_name" size="62" maxlength="100" value="{$config[usertitle_x_name]}">&nbsp;
+		{$config[usertitle_x_name_Error]}
+	</div>
+	<div style="clear:both;height: 1px;"></div>
+<usertitle_x_description>
+	<div id="itemLineTitle">
+		<label title="{$config[usertitle_descriptionTitle]}">{$config[usertitle_descriptionTitle]}</label>
+	</div>
+	<div style="clear:both;height: 1px;"></div>
+	<div valign="center" style="background:white;">
+		<textarea id="x_description" name="x_description">{$config[usertitle_x_description]}</textarea>
+		<script language="javascript1.2" type="text/javascript">generate_wysiwyg("x_description",740,200);</script>
+	</div>
+	<div style="clear:both;height: 1px;"></div>
+</usertitle_x_description>
+<usertitle_x_langID>
+	<div id="itemTitle" style="width:100px;">
+		<label title="{$config[usertitle_langTitle]}">{$config[usertitle_langTitle]}</label>
+	</div>
+	<div id="itemView">
+		<select style="width:50;" name="x_langID">{$config[usertitle_lang]}</select>
+	</div>
+	<div style="clear:both;height: 1px;"></div>
+</usertitle_x_langID>
+</div>
+##/inputForm##
+##viewForm##
+<div id="contentFrame">
+	<div id="itemTitle" style="width:100px;">
+		<label title="{$config[usertitle_nameTitle]}">{$config[usertitle_nameTitle]}</label>
+	</div>
+	<div id="itemView">
+		{$config[usertitle_x_name]}&nbsp;
+	</div>
+	<div style="clear:both;height: 1px;"></div>
+<usertitle_x_description>
+	<div id="itemLineTitle">
+		<label title="{$config[usertitle_descriptionTitle]}">{$config[usertitle_descriptionTitle]}</label>
+	</div>
+	<div style="clear:both;height: 1px;"></div>
+	<div id="itemView">
+		{$config[usertitle_x_description]}
+	</div>
+	<div style="clear:both;height: 1px;"></div>
+</usertitle_x_description>
+<usertitle_x_langID>
+	<div id="itemTitle" style="width:100px;">
+		<label title="{$config[usertitle_langTitle]}">{$config[usertitle_langTitle]}</label>
+	</div>
+	<div id="itemView">
+		{$config[usertitle_lang]}
+	</div>
+	<div style="clear:both;height: 1px;"></div>
+</usertitle_x_langID>
+</div>
+##/viewForm##
+##listHeadForm##
+<div id="listHeader">
+	<div id="itemView" style="width:200px;">{$config[usertitle_nameTitle]}</div>
+<usertitle_x_insertWhen>
+	<div id="itemView" style="width:200px;">{$config[usertitle_insertWhenTitle]}</div>
+</usertitle_x_insertWhen>
+	<div id="itemView" style="width:40px;">{$config[usertitle_activeTitle]}</div>
+<usertitle_x_langID>
+	<div id="itemView" style="width:70px;">{$config[usertitle_langTitle]}</div>
+</usertitle_x_langID>
+	<div id="itemView" style="width:170px;"></div>
+	<div style="clear:both;height: 1px;"></div>
+</div>
+##/listHeadForm##
+##listItemForm##
+<div id="listItem" class="{$config[usertitle_bgcolor]}">
+	<div id="itemView" style="width:200px;">{$config[usertitle_x_name]}</div>
+<usertitle_x_insertWhen>
+	<div id="itemView" style="width:200px;">{$config[usertitle_x_insertWhen]}</div>
+</usertitle_x_insertWhen>
+	<div id="itemView" style="width:40px;">{$config[usertitle_x_active]}</div>
+<usertitle_x_langID>
+	<div id="itemView" style="width:70px;">{$config[usertitle_x_lang]}</div>
+</usertitle_x_langID>
+	<div id="itemViewRight" style="width:170px;">{$config[usertitle_x_submenu]}</div>
+	<div style="clear:both;height: 1px;"></div>
+</div>
+##/listItemForm##

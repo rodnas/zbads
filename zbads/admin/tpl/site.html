@@ -1,0 +1,106 @@
+##inputForm##
+<div id="contentFrame">
+	<div id="itemTitle" style="width:100px;">
+		<label title="{$config[site_nameTitle]}">{$config[site_nameTitle]}</label>
+	</div>
+	<div id="itemView">
+		<input type="text" name="x_name" size="62" maxlength="100" value="{$config[site_x_name]}">&nbsp;
+		{$config[site_x_name_Error]}
+	</div>
+	<div style="clear:both;height: 1px;"></div>
+	<div id="itemTitle" style="width:100px;">
+		<label title="{$config[site_wwwAddressTitle]}">{$config[site_wwwAddressTitle]}</label>
+	</div>
+	<div id="itemView">
+		<input type="text" name="x_wwwAddress" size="62" maxlength="100" value="{$config[site_x_wwwAddress]}">&nbsp;
+	</div>
+	<div style="clear:both;height: 1px;"></div>
+<site_x_description>
+	<div id="itemLineTitle">
+		<label title="{$config[site_descriptionTitle]}">{$config[site_descriptionTitle]}</label>
+	</div>
+	<div style="clear:both;height: 1px;"></div>
+	<div valign="center" style="background:white;">
+		<textarea id="x_description" name="x_description">{$config[site_x_description]}</textarea>
+		<script language="javascript1.2" type="text/javascript">generate_wysiwyg("x_description",740,200);</script>
+	</div>
+	<div style="clear:both;height: 1px;"></div>
+</site_x_description>
+<site_x_langID>
+	<div id="itemTitle" style="width:100px;">
+		<label title="{$config[site_langTitle]}">{$config[site_langTitle]}</label>
+	</div>
+	<div id="itemView">
+		<select style="width:50;" name="x_langID">{$config[site_lang]}</select>
+	</div>
+	<div style="clear:both;height: 1px;"></div>
+</site_x_langID>
+</div>
+##/inputForm##
+##viewForm##
+<div id="contentFrame">
+	<div id="itemTitle" style="width:100px;">
+		<label title="{$config[site_nameTitle]}">{$config[site_nameTitle]}</label>
+	</div>
+	<div id="itemView">
+		{$config[site_x_name]}&nbsp;
+	</div>
+	<div style="clear:both;height: 1px;"></div>
+	<div id="itemTitle" style="width:100px;">
+		<label title="{$config[site_wwwAddressTitle]}">{$config[site_wwwAddressTitle]}</label>
+	</div>
+	<div id="itemView">
+		{$config[site_x_wwwAddress]}&nbsp;
+	</div>
+	<div style="clear:both;height: 1px;"></div>
+<site_x_description>
+	<div id="itemLineTitle">
+		<label title="{$config[site_descriptionTitle]}">{$config[site_descriptionTitle]}</label>
+	</div>
+	<div style="clear:both;height: 1px;"></div>
+	<div id="itemView">
+		{$config[site_x_description]}
+	</div>
+	<div style="clear:both;height: 1px;"></div>
+</site_x_description>
+<site_x_langID>
+	<div id="itemTitle" style="width:100px;">
+		<label title="{$config[site_langTitle]}">{$config[site_langTitle]}</label>
+	</div>
+	<div id="itemView">
+		{$config[site_lang]}
+	</div>
+	<div style="clear:both;height: 1px;"></div>
+</site_x_langID>
+</div>
+##/viewForm##
+##listHeadForm##
+<div id="listHeader">
+	<div id="itemView" style="width:200px;">{$config[site_nameTitle]}</div>
+	<div id="itemView" style="width:200px;">{$config[site_wwwAddressTitle]}</div>
+<site_x_insertWhen>
+	<div id="itemView" style="width:200px;">{$config[site_insertWhenTitle]}</div>
+</site_x_insertWhen>
+	<div id="itemView" style="width:40px;">{$config[site_activeTitle]}</div>
+<site_x_langID>
+	<div id="itemView" style="width:70px;">{$config[site_langTitle]}</div>
+</site_x_langID>
+	<div id="itemView" style="width:170px;"></div>
+	<div style="clear:both;height: 1px;"></div>
+</div>
+##/listHeadForm##
+##listItemForm##
+<div id="listItem" class="{$config[site_bgcolor]}">
+	<div id="itemView" style="width:200px;">{$config[site_x_name]}</div>
+	<div id="itemView" style="width:200px;">{$config[site_x_wwwAddress]}</div>
+<site_x_insertWhen>
+	<div id="itemView" style="width:200px;">{$config[site_x_insertWhen]}</div>
+</site_x_insertWhen>
+	<div id="itemView" style="width:40px;">{$config[site_x_active]}</div>
+<site_x_langID>
+	<div id="itemView" style="width:70px;">{$config[site_x_lang]}</div>
+</site_x_langID>
+	<div id="itemViewRight" style="width:170px;">{$config[site_x_submenu]}</div>
+	<div style="clear:both;height: 1px;"></div>
+</div>
+##/listItemForm##

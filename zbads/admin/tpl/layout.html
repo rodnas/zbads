@@ -1,0 +1,59 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html lang="hu">
+ <head>
+  <title>##START##config#configShare#systemTitle##STOP##</title>
+  <meta name="Description" content="##START##config#metaDescriptionHTML##STOP##">
+  <meta name="Keywords" content="##START##config#metaKeywordsHTML##STOP##">
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <meta http-equiv="content-language" content="hu">
+  <meta name="language" content="hu">
+  ##START##config#pageStartHTML##STOP##
+	<link rel="stylesheet" href="/css/jquery.ui.all.css">
+	<link rel="stylesheet" href="/css/demos.css">
+	<script>
+	$(function() {
+		$( "#x_activateWhen" ).datepicker();
+		$( "#x_deactivateWhen" ).datepicker();
+	});
+	</script>
+ </head> 
+<body class=body>
+<div id="htmlPage" align="center">
+<div id="logoBox">##START##config#topLogoHTML##STOP##</div>
+<div style="clear:both;height: 1px;"></div>
+<div id="statusLineLeft">
+	##START##config#configShare#welcomeText##STOP##
+	<span id="userName">##START##config#configShare#nickName##STOP##</span>!
+</div>
+<div id="statusLineRight">
+	<img src="##START##config#configShare#imagePath##STOP##lilanyil.png" id="purpleArrow" border="0">
+	<a id="logoutText" href="index.php?modulSelect=logout" title="##START##config#configShare#logoutTitle##STOP##">
+	##START##config#configShare#logoutTitle##STOP##</a>
+	&nbsp;&nbsp;<img src="##START##config#configShare#imagePath##STOP##lilanyil.png" id="purpleArrow" border="0">
+	<a id="logoutText" href="index.php?modulSelect=users&modulAction=edit&key=2&whichBack=users" title="##START##config#configShare#myDataTitle##STOP##">
+	##START##config#configShare#myDataTitle##STOP##
+	</a>
+</div>
+<div style="clear:both;height: 1px;"></div>
+<div id="leftSide">
+	##START##config#topMenuHTML##STOP##
+</div>
+<div id="rightSide">
+	<div style="height:32px;vertical-align:middle;">
+	<span id="statusText" style="margin-left:12px;">##START##config#configShare#modulName##STOP##</span>
+	<img src="##START##config#configShare#imagePath##STOP##lilanyil.png" id="purpleArrow" border="0">
+	<span id="statusText" style="margin-left:5px;">##START##config#configShare#actionName##STOP##</span>
+	</div>
+<div style="clear:both;height: 2px;background-color:white"></div>
+##START##config#topSearchHTML##STOP##
+##START##config#topAdminHTML##STOP##
+<div style="clear:both;height: 0px;background-color:white"></div>
+##START##config#topErrorMessageHTML##STOP##
+##START##config#formStartHTML##STOP##
+##START##config#contentHTML##STOP##
+##START##config#formStopHTML##STOP##
+</div>
+</div>
+<button type="button" onclick="loadXMLDoc()">Change Content</button>
+</body>
+</html>

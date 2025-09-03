@@ -1,0 +1,171 @@
+##inputForm##
+<div id="contentFrame">
+	<div id="itemTitle" style="width:100px;">
+		<label title="{$config[configs_modulTitle]}">{$config[configs_modulTitle]}</label>
+	</div>
+	<div id="itemView">
+		<input type="text" name="x_modul" size="62" maxlength="100" value="{$config[configs_x_modul]}">&nbsp;
+		{$config[configs_x_modul_Error]}
+	</div>
+	<div style="clear:both;height: 1px;"></div>
+	<div id="itemTitle" style="width:100px;">
+		<label title="{$config[configs_nameTitle]}">{$config[configs_nameTitle]}</label>
+	</div>
+	<div id="itemView">
+		<input type="text" name="x_name" size="62" maxlength="100" value="{$config[configs_x_name]}">&nbsp;
+		{$config[configs_x_name_Error]}
+	</div>
+	<div style="clear:both;height: 1px;"></div>
+	<div id="itemTitle" style="width:100px;">
+		<label title="{$config[configs_cfgPATHTitle]}">{$config[configs_cfgPATHTitle]}</label>
+	</div>
+	<div id="itemView">
+		<input type="text" name="x_cfgPATH" size="62" maxlength="100" value="{$config[configs_x_cfgPATH]}">&nbsp;
+	</div>
+	<div style="clear:both;height: 1px;"></div>
+	<div id="itemTitle" style="width:100px;">
+		<label title="{$config[configs_tplPATHTitle]}">{$config[configs_tplPATHTitle]}</label>
+	</div>
+	<div id="itemView">
+		<input type="text" name="x_tplPATH" size="62" maxlength="100" value="{$config[configs_x_tplPATH]}">&nbsp;
+	</div>
+	<div style="clear:both;height: 1px;"></div>
+	<div id="itemLineTitle">
+		<label title="{$config[configs_iniCFGTitle]}">{$config[configs_iniCFGTitle]}</label>
+	</div>
+	<div style="clear:both;height: 1px;"></div>
+	<div style="float:center;text-align:center">
+		<textarea style="border: 1px solid #999999;" rows="10" cols="100" id="x_iniCFG" name="x_iniCFG">{$config[configs_x_iniCFG]}</textarea>
+	</div>
+	<div style="clear:both;height: 1px;"></div>
+	<div id="itemLineTitle">
+		<label title="{$config[configs_lngCFGTitle]}">{$config[configs_lngCFGTitle]}</label>
+	</div>
+	<div style="clear:both;height: 1px;"></div>
+	<div style="float:center;text-align:center">
+		<textarea style="border: 1px solid #999999;" rows="10" cols="100" id="x_lngCFG" name="x_lngCFG">{$config[configs_x_lngCFG]}</textarea>
+	</div>
+	<div style="clear:both;height: 1px;"></div>
+<configs_x_description>
+	<div id="itemLineTitle">
+		<label title="{$config[configs_descriptionTitle]}">{$config[configs_descriptionTitle]}</label>
+	</div>
+	<div style="clear:both;height: 1px;"></div>
+	<div valign="center" style="background:white;">
+		<textarea id="x_description" name="x_description">{$config[configs_x_description]}</textarea>
+		<script language="javascript1.2" type="text/javascript">generate_wysiwyg("x_description",740,200);</script>
+	</div>
+	<div style="clear:both;height: 1px;"></div>
+</configs_x_description>
+<configs_x_langID>
+	<div id="itemTitle" style="width:100px;">
+		<label title="{$config[configs_langTitle]}">{$config[configs_langTitle]}</label>
+	</div>
+	<div id="itemView">
+		<select style="width:50;" name="x_langID">{$config[configs_lang]}</select>
+	</div>
+	<div style="clear:both;height: 1px;"></div>
+</configs_x_langID>
+</div>
+##/inputForm##
+##viewForm##
+<div id="contentFrame">
+	<div id="itemTitle" style="width:100px;">
+		<label title="{$config[configs_modulTitle]}">{$config[configs_modulTitle]}</label>
+	</div>
+	<div id="itemView">
+		{$config[configs_x_modul]}&nbsp;
+	</div>
+	<div style="clear:both;height: 1px;"></div>
+	<div id="itemTitle" style="width:100px;">
+		<label title="{$config[configs_nameTitle]}">{$config[configs_nameTitle]}</label>
+	</div>
+	<div id="itemView">
+		{$config[configs_x_name]}&nbsp;
+	</div>
+	<div style="clear:both;height: 1px;"></div>
+	<div id="itemTitle" style="width:100px;">
+		<label title="{$config[configs_cfgPATHTitle]}">{$config[configs_cfgPATHTitle]}</label>
+	</div>
+	<div id="itemView">
+		{$config[configs_x_cfgPATH]}&nbsp;
+	</div>
+	<div style="clear:both;height: 1px;"></div>
+	<div id="itemTitle" style="width:100px;">
+		<label title="{$config[configs_tplPATHTitle]}">{$config[configs_tplPATHTitle]}</label>
+	</div>
+	<div id="itemView">
+		{$config[configs_x_tplPATH]}&nbsp;
+	</div>
+	<div style="clear:both;height: 1px;"></div>
+	<div id="itemLineTitle">
+		<label title="{$config[configs_iniCFGTitle]}">{$config[configs_iniCFGTitle]}</label>
+	</div>
+	<div style="clear:both;height: 1px;"></div>
+	<div id="itemView">
+		{$config[configs_x_iniCFG]}
+	</div>
+	<div style="clear:both;height: 1px;"></div>
+	<div id="itemLineTitle">
+		<label title="{$config[configs_lngCFGTitle]}">{$config[configs_lngCFGTitle]}</label>
+	</div>
+	<div style="clear:both;height: 1px;"></div>
+	<div id="itemView">
+		{$config[configs_x_lngCFG]}
+	</div>
+	<div style="clear:both;height: 1px;"></div>
+<configs_x_description>
+	<div id="itemLineTitle">
+		<label title="{$config[configs_descriptionTitle]}">{$config[configs_descriptionTitle]}</label>
+	</div>
+	<div style="clear:both;height: 1px;"></div>
+	<div id="itemView">
+		{$config[configs_x_description]}
+	</div>
+	<div style="clear:both;height: 1px;"></div>
+</configs_x_description>
+<configs_x_langID>
+	<!-- div id="itemTitle" style="width:100px;">
+		<label title="{$config[configs_langTitle]}">{$config[configs_langTitle]}</label>
+	</div>
+	<div id="itemView">
+		{$config[configs_lang]}
+	</div>
+	<div style="clear:both;height: 1px;"></div>
+</configs_x_langID>
+</div>
+##/viewForm##
+##listHeadForm##
+<div id="listHeader">
+	<div id="itemView" style="width:120px;">{$config[configs_modulTitle]}</div>
+	<div id="itemView" style="width:120px;">{$config[configs_nameTitle]}</div>
+	<div id="itemView" style="width:30px;">{$config[configs_viewTitle]}</div>
+	<div id="itemView" style="width:30px;">{$config[configs_addTitle]}</div>
+	<div id="itemView" style="width:30px;">{$config[configs_editTitle]}</div>
+	<div id="itemView" style="width:30px;">{$config[configs_deleteTitle]}</div>
+	<div id="itemView" style="width:30px;">{$config[configs_adminTitle]}</div>
+	<div id="itemView" style="width:50px;margin-left:20px;">{$config[configs_activeTitle]}</div>
+<configs_x_langID>
+	<div id="itemView" style="width:70px;">{$config[configs_langTitle]}</div>
+</configs_x_langID>
+	<div id="itemView" style="width:170px;"></div>
+	<div style="clear:both;height: 1px;"></div>
+</div>
+##/listHeadForm##
+##listItemForm##
+<div id="listItem" class="{$config[configs_bgcolor]}">
+	<div id="itemView" style="width:120px;">{$config[configs_x_modul]}</div>
+	<div id="itemView" style="width:120px;">{$config[configs_x_name]}</div>
+	<div id="itemView" style="width:30px;">{$config[configs_x_view]}</div>
+	<div id="itemView" style="width:30px;">{$config[configs_x_add]}</div>
+	<div id="itemView" style="width:30px;">{$config[configs_x_edit]}</div>
+	<div id="itemView" style="width:30px;">{$config[configs_x_delete]}</div>
+	<div id="itemView" style="width:30px;">{$config[configs_x_admin]}</div>
+	<div id="itemView" style="width:50px;margin-left:20px;">{$config[configs_x_active]}</div>
+<configs_x_langID>
+	<div id="itemView" style="width:70px;">{$config[configs_x_lang]}</div>
+</configs_x_langID>
+	<div id="itemViewRight" style="width:170px;">{$config[configs_x_submenu]}</div>
+	<div style="clear:both;height: 1px;"></div>
+</div>
+##/listItemForm##

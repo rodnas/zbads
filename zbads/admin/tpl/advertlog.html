@@ -1,0 +1,100 @@
+##inputForm##
+##/inputForm##
+##viewForm##
+<div id="contentFrame">
+	<div id="itemTitle" style="width:100px;">
+		<label title="{$config[advertlog_advertIDTitle]}">{$config[advertlog_advertIDTitle]}</label>
+	</div>
+	<div id="itemView">
+		{$config[advertlog_advert]}
+	</div>
+	<div style="clear:both;height: 1px;"></div>
+	<div id="itemTitle" style="width:100px;">
+		<label title="{$config[advertlog_remoteIPTitle]}">{$config[advertlog_remoteIPTitle]}</label>
+	</div>
+	<div id="itemView">
+		{$config[advertlog_x_remoteIP]}
+	</div>
+	<div style="clear:both;height: 1px;"></div>
+	<div id="itemTitle" style="width:100px;">
+		<label title="{$config[advertlog_jumpURLTitle]}">{$config[advertlog_jumpURLTitle]}</label>
+	</div>
+	<div id="itemView">
+		{$config[advertlog_x_jumpURL]}
+	</div>
+	<div style="clear:both;height: 1px;"></div>
+	<div id="itemTitle" style="width:100px;">
+		<label title="{$config[advertlog_nameTitle]}">{$config[advertlog_nameTitle]}</label>
+	</div>
+	<div id="itemView">
+		{$config[advertlog_x_name]}&nbsp;
+	</div>
+	<div style="clear:both;height: 1px;"></div>
+	<div id="itemTitle" style="width:100px;">
+		<label title="{$config[advertlog_priceTitle]}">{$config[advertlog_priceTitle]}</label>
+	</div>
+	<div id="itemView">
+		{$config[advertlog_x_price]}&nbsp;
+	</div>
+	<div style="clear:both;height: 1px;"></div>
+	<div id="itemTitle" style="width:100px;">
+		<label title="{$config[advertlog_percentVATTitle]}">{$config[advertlog_percentVATTitle]}</label>
+	</div>
+	<div id="itemView">
+		{$config[advertlog_x_percentVAT]}&nbsp;
+	</div>
+	<div style="clear:both;height: 1px;"></div>
+	<div id="itemTitle" style="width:100px;">
+		<label title="{$config[advertlog_playWhenTitle]}">{$config[advertlog_playWhenTitle]}</label>
+	</div>
+	<div id="itemView">
+		{$config[advertlog_x_playWhen]}&nbsp;
+	</div>
+	<div style="clear:both;height: 1px;"></div>
+	<div id="itemTitle" style="width:100px;">
+		<label title="{$config[advertlog_clickWhenTitle]}">{$config[advertlog_clickWhenTitle]}</label>
+	</div>
+	<div id="itemView">
+		{$config[advertlog_x_clickWhen]}&nbsp;
+	</div>
+	<div style="clear:both;height: 1px;"></div>
+	<div id="itemTitle" style="width:100px;">
+		<label title="{$config[advertlog_insertWhenTitle]}">{$config[advertlog_insertWhenTitle]}</label>
+	</div>
+	<div id="itemView">
+		{$config[advertlog_x_insertWhen]}&nbsp;
+	</div>
+	<div style="clear:both;height: 1px;"></div>
+<advertlog_x_langID>
+	<div id="itemTitle" style="width:100px;">
+		<label title="{$config[advertlog_langTitle]}">{$config[advertlog_langTitle]}</label>
+	</div>
+	<div id="itemView">
+		{$config[advertlog_lang]}
+	</div>
+	<div style="clear:both;height: 1px;"></div>
+</advertlog_x_langID>
+</div>
+##/viewForm##
+##listHeadForm##
+<div id="listHeader">
+	<div id="itemView" style="width:150px;">{$config[advertlog_advertTitle]}</div>
+	<div id="itemView" style="width:150px;">{$config[advertlog_remoteIPTitle]}</div>
+	<div id="itemView" style="width:160px;">{$config[advertlog_insertWhenTitle]}</div>
+	<div id="itemView" style="width:40px;">{$config[advertlog_activeTitle]}</div>
+	<!-- div id="itemView" style="width:70px;">{$config[advertlog_langTitle]}</div -->
+	<div id="itemView" style="width:120px;"></div>
+	<div style="clear:both;height: 1px;"></div>
+</div>
+##/listHeadForm##
+##listItemForm##
+<div id="listItem" class="{$config[advertlog_bgcolor]}">
+	<div id="itemView" style="width:150px;">{$config[advertlog_x_advert]}</div>
+	<div id="itemView" style="width:150px;">{$config[advertlog_x_remoteIP]}</div>
+	<div id="itemView" style="width:160px;">{$config[advertlog_x_insertWhen]}</div>
+	<div id="itemView" style="width:40px;">{$config[advertlog_x_active]}</div>
+	<!-- div id="itemView" style="width:70px;">{$config[advertlog_x_lang]}</div -->
+	<div id="itemViewRight" style="width:120px;">{$config[advertlog_x_submenu]}</div>
+	<div style="clear:both;height: 1px;"></div>
+</div>
+##/listItemForm##

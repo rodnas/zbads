@@ -1,0 +1,131 @@
+##inputForm##
+<div id="contentFrame">
+	<div id="itemTitle" style="width:100px;">
+		<label title="{$config[users_rights_groupsIDTitle]}">{$config[users_rights_groupsIDTitle]}</label>
+	</div>
+	<div id="itemView">
+		{$config[users_rights_groups]}
+	</div>
+	<div style="clear:both;height: 1px;"></div>
+	<div id="itemTitle" style="width:100px;">
+		<label title="{$config[users_rights_modulIDTitle]}">{$config[users_rights_modulIDTitle]}</label>
+	</div>
+	<div id="itemView">
+		<select name="x_modulID">{$config[users_rights_configs]}</select>
+		{$config[users_rights_x_modulID_Error]}
+	</div>
+	<div style="clear:both;height: 1px;"></div>
+	<div id="itemTitle" style="width:100px;">
+		<label title="{$config[users_rights_siteIDTitle]}">{$config[users_rights_siteIDTitle]}</label>
+	</div>
+	<div id="itemView">
+		<select name="x_siteID">{$config[users_rights_site]}</select>
+		{$config[users_rights_x_siteID_Error]}
+	</div>
+	<div style="clear:both;height: 1px;"></div>
+<users_rights_x_description>
+	<div id="itemLineTitle">
+		<label title="{$config[groups_descriptionTitle]}">{$config[groups_descriptionTitle]}</label>
+	</div>
+	<div style="clear:both;height: 1px;"></div>
+	<div valign="center" style="background:white;">
+		<textarea id="x_description" name="x_description">{$config[groups_x_description]}</textarea>
+		<script language="javascript1.2" type="text/javascript">generate_wysiwyg("x_description",740,200);</script>
+	</div>
+	<div style="clear:both;height: 1px;"></div>
+</users_rights_x_description>
+<users_rights_x_langID>
+	<div id="itemTitle" style="width:100px;">
+		<label title="{$config[users_rights_langTitle]}">{$config[users_rights_langTitle]}</label>
+	</div>
+	<div id="itemView">
+		<select style="width:50;" name="x_langID">{$config[users_rights_lang]}</select>
+	</div>
+	<div style="clear:both;height: 1px;"></div>
+</users_rights_x_langID>
+</div>
+##/inputForm##
+##viewForm##
+<div id="contentFrame">
+	<div id="itemTitle" style="width:100px;">
+		<label title="{$config[users_rights_groupsIDTitle]}">{$config[users_rights_groupsIDTitle]}</label>
+	</div>
+	<div id="itemView">
+		{$config[users_rights_groups]}
+	</div>
+	<div style="clear:both;height: 1px;"></div>
+	<div id="itemTitle" style="width:100px;">
+		<label title="{$config[users_rights_modulIDTitle]}">{$config[users_rights_modulIDTitle]}</label>
+	</div>
+	<div id="itemView">
+		{$config[users_rights_configs]}
+	</div>
+	<div style="clear:both;height: 1px;"></div>
+	<div id="itemTitle" style="width:100px;">
+		<label title="{$config[users_rights_siteIDTitle]}">{$config[users_rights_siteIDTitle]}</label>
+	</div>
+	<div id="itemView">
+		{$config[users_rights_site]}
+	</div>
+	<div style="clear:both;height: 1px;"></div>
+<users_rights_x_description>
+	<div id="itemLineTitle">
+		<label title="{$config[groups_descriptionTitle]}">{$config[groups_descriptionTitle]}</label>
+	</div>
+	<div style="clear:both;height: 1px;"></div>
+	<div id="itemView">
+		{$config[groups_x_description]}
+	</div>
+	<div style="clear:both;height: 1px;"></div>
+</users_rights_x_description>
+<users_rights_x_langID>
+	<div id="itemTitle" style="width:100px;">
+		<label title="{$config[users_rights_langTitle]}">{$config[users_rights_langTitle]}</label>
+	</div>
+	<div id="itemView">
+		{$config[users_rights_lang]}
+	</div>
+	<div style="clear:both;height: 1px;"></div>
+</users_rights_x_langID>
+</div>
+##/viewForm##
+##listPrevForm##
+<div id="listPrev">
+	<div id="itemView"><b>{$config[users_prev_nickname]}</b></div>
+	<div style="clear:both;height: 1px;"></div>
+</div>
+##/listPrevForm##
+##listHeadForm##
+<div id="listHeader">
+	<div id="itemView" style="width:120px;">{$config[users_rights_siteTitle]}</div>
+	<div id="itemView" style="width:120px;">{$config[users_rights_modulTitle]}</div>
+	<div id="itemView" style="width:30px;">{$config[users_rights_viewTitle]}</div>
+	<div id="itemView" style="width:30px;">{$config[users_rights_addTitle]}</div>
+	<div id="itemView" style="width:30px;">{$config[users_rights_editTitle]}</div>
+	<div id="itemView" style="width:30px;">{$config[users_rights_deleteTitle]}</div>
+	<div id="itemView" style="width:30px;">{$config[users_rights_adminTitle]}</div>
+	<div id="itemView" style="width:50px;margin-left:10px;">{$config[users_rights_activeTitle]}</div>
+<users_rights_x_langID>
+	<div id="itemView" style="width:70px;">{$config[users_rights_langTitle]}</div>
+</users_rights_x_langID>
+	<div id="itemView" style="width:170px;"></div>
+	<div style="clear:both;height: 1px;"></div>
+</div>
+##/listHeadForm##
+##listItemForm##
+<div id="listItem" class="{$config[users_rights_bgcolor]}">
+	<div id="itemView" style="width:120px;">{$config[users_rights_x_site]}</div>
+	<div id="itemView" style="width:120px;">{$config[users_rights_x_configs]}</div>
+	<div id="itemView" style="width:30px;">{$config[users_rights_x_view]}</div>
+	<div id="itemView" style="width:30px;">{$config[users_rights_x_add]}</div>
+	<div id="itemView" style="width:30px;">{$config[users_rights_x_edit]}</div>
+	<div id="itemView" style="width:30px;">{$config[users_rights_x_delete]}</div>
+	<div id="itemView" style="width:30px;">{$config[users_rights_x_admin]}</div>
+	<div id="itemView" style="width:50px;margin-left:20px;">{$config[users_rights_x_active]}</div>
+<users_rights_x_langID>
+	<div id="itemView" style="width:70px;">{$config[users_rights_x_lang]}</div>
+</users_rights_x_langID>
+	<div id="itemViewRight" style="width:170px;">{$config[users_rights_x_submenu]}</div>
+	<div style="clear:both;height: 1px;"></div>
+</div>
+##/listItemForm##

@@ -1,0 +1,154 @@
+##inputForm##
+<div id="contentFrame"{$config[marginLeft]}>
+<size_x_advertiserID>
+	<div id="itemTitle" style="width:100px;">
+		<label title="{$config[size_advertiserIDTitle]}">{$config[size_advertiserIDTitle]}</label>
+	</div>
+	<div id="itemView">
+		<select name="x_advertiserID">{$config[size_advertiser]}</select>
+	</div>
+	<div style="clear:both;height: 1px;"></div>
+</size_x_advertiserID>
+<size_x_siteID>
+	<div id="itemTitle" style="width:100px;">
+		<label title="{$config[size_siteIDTitle]}">{$config[size_siteIDTitle]}</label>
+	</div>
+	<div id="itemView">
+		<select name="x_siteID">{$config[size_site]}</select>
+	</div>
+	<div style="clear:both;height: 1px;"></div>
+</size_x_siteID>
+	<div id="itemTitle" style="width:100px;">
+		<label title="{$config[size_nameTitle]}">{$config[size_nameTitle]}</label>
+	</div>
+	<div id="itemView">
+		<input type="text" name="x_name" size="62" maxlength="100" value="{$config[size_x_name]}">&nbsp;
+		{$config[size_x_name_Error]}
+	</div>
+	<div style="clear:both;height: 1px;"></div>
+	<div id="itemTitle" style="width:100px;">
+		<label title="{$config[size_sizeWidthTitle]}">{$config[size_sizeWidthTitle]}</label>
+	</div>
+	<div id="itemView">
+		<input type="text" name="x_sizeWidth" size="62" maxlength="100" value="{$config[size_x_sizeWidth]}">&nbsp;
+	</div>
+	<div style="clear:both;height: 1px;"></div>
+	<div id="itemTitle" style="width:100px;">
+		<label title="{$config[size_sizeHeightTitle]}">{$config[size_sizeHeightTitle]}</label>
+	</div>
+	<div id="itemView">
+		<input type="text" name="x_sizeHeight" size="62" maxlength="100" value="{$config[size_x_sizeHeight]}">&nbsp;
+	</div>
+	<div style="clear:both;height: 1px;"></div>
+<size_x_description>
+	<div id="itemLineTitle">
+		<label title="{$config[size_descriptionTitle]}">{$config[size_descriptionTitle]}</label>
+	</div>
+	<div style="clear:both;height: 1px;"></div>
+	<div valign="center" style="background:white;">
+		<textarea id="x_description" name="x_description">{$config[size_x_description]}</textarea>
+		<script language="javascript1.2" type="text/javascript">generate_wysiwyg("x_description",740,200);</script>
+	</div>
+	<div style="clear:both;height: 1px;"></div>
+</size_x_description>
+<size_x_langID>
+	<div id="itemTitle" style="width:100px;">
+		<label title="{$config[size_langTitle]}">{$config[size_langTitle]}</label>
+	</div>
+	<div id="itemView">
+		<span class="baseFont"><select style="width:50;" name="x_langID">{$config[size_lang]}</select></span>
+	</div>
+	<div style="clear:both;height: 1px;"></div>
+</size_x_langID>
+</div>
+##/inputForm##
+##viewForm##
+<div id="contentFrame">
+	<div id="itemTitle" style="width:100px;">
+		<label title="{$config[size_advertiserIDTitle]}">{$config[size_advertiserIDTitle]}</label>
+	</div>
+	<div id="itemView">
+		{$config[size_advertiser]}
+	</div>
+	<div style="clear:both;height: 1px;"></div>
+	<div id="itemTitle" style="width:100px;">
+		<label title="{$config[size_siteIDTitle]}">{$config[size_siteIDTitle]}</label>
+	</div>
+	<div id="itemView">
+		{$config[size_site]}
+	</div>
+	<div style="clear:both;height: 1px;"></div>
+	<div id="itemTitle" style="width:100px;">
+		<label title="{$config[size_nameTitle]}">{$config[size_nameTitle]}</label>
+	</div>
+	<div id="itemView">
+		{$config[size_x_name]}&nbsp;
+	</div>
+	<div style="clear:both;height: 1px;"></div>
+	<div id="itemTitle" style="width:100px;">
+		<label title="{$config[size_sizeWidthTitle]}">{$config[size_sizeWidthTitle]}</label>
+	</div>
+	<div id="itemView">
+		{$config[size_x_sizeWidth]}&nbsp;
+	</div>
+	<div style="clear:both;height: 1px;"></div>
+	<div id="itemTitle" style="width:100px;">
+		<label title="{$config[size_sizeHeightTitle]}">{$config[size_sizeHeightTitle]}</label>
+	</div>
+	<div id="itemView">
+		{$config[size_x_sizeHeight]}&nbsp;
+	</div>
+	<div style="clear:both;height: 1px;"></div>
+<size_x_description>
+	<div id="itemLineTitle">
+		<label title="{$config[size_descriptionTitle]}">{$config[size_descriptionTitle]}</label>
+	</div>
+	<div style="clear:both;height: 1px;"></div>
+	<div id="itemView">
+		{$config[size_x_description]}
+	</div>
+	<div style="clear:both;height: 1px;"></div>
+</size_x_description>
+<size_x_langID>
+	<div id="itemTitle" style="width:100px;">
+		<label title="{$config[size_langTitle]}">{$config[size_langTitle]}</label>
+	</div>
+	<div id="itemView"">
+		{$config[size_lang]}
+	</div>
+	<div style="clear:both;height: 1px;"></div>
+</size_x_langID>
+</div>
+##/viewForm##
+##listHeadForm##
+<div id="listHeader">
+	<div id="itemView" style="width:160px;">{$config[size_nameTitle]}</div>
+	<div id="itemView" style="width:80px;">{$config[size_sizeWidthTitle]}</div>
+	<div id="itemView" style="width:80px;">{$config[size_sizeHeightTitle]}</div>
+<size_x_insertWhen>
+	<div id="itemView" style="width:150px;">{$config[size_insertWhenTitle]}</div>
+</size_x_insertWhen>
+	<div id="itemView" style="width:40px;">{$config[size_activeTitle]}</div>
+<size_x_langID>
+	<div id="itemView" style="width:70px;">{$config[size_langTitle]}</div>
+</size_x_langID>
+	<div id="itemView" style="width:170px;"></div>
+	<div style="clear:both;height: 1px;"></div>
+</div>
+##/listHeadForm##
+##listItemForm##
+<div id="listItem" class="{$config[size_bgcolor]}">
+	<div id="itemView" style="width:160px;">{$config[size_x_name]}</div>
+	<div id="itemView" style="width:80px;">{$config[size_x_sizeWidth]}</div>
+	<div id="itemView" style="width:80px;">{$config[size_x_sizeHeight]}</div>
+<size_x_insertWhen>
+	<div id="itemView" style="width:150px;">{$config[size_x_insertWhen]}</div>
+</size_x_insertWhen>
+	<div id="itemView" style="width:40px;">{$config[size_x_active]}</div>
+<size_x_langID>
+	<div id="itemView" style="width:70px;">{$config[size_x_lang]}</div>
+</size_x_langID>
+	<div id="itemViewRight" style="width:170px;">{$config[size_x_submenu]}</div>
+	<div style="clear:both;height: 1px;"></div>
+</div>
+##/listItemForm##

@@ -1,0 +1,40 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html lang="hu"><head>
+  <title>##START##config#configShare#systemTitle##STOP##</title>
+  <meta name="Description" content="##START##config#metaDescriptionHTML##STOP##">
+  <meta name="Keywords" content="##START##config#metaKeywordsHTML##STOP##">
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <meta http-equiv="content-language" content="hu">
+  <meta name="language" content="hu">
+  <LINK REL="stylesheet" HREF="admin/css/login.css" TYPE="text/css">
+ </head> 
+<body class=body>
+<div id="htmlPage" align="center">
+<div id="topHeaderBox" align="center">
+</div>
+<form method="post" name="loginForm" id="loginForm">
+<div id="loginBox">
+	<div id="loginError">
+		##START##config#x_errorText##STOP##&nbsp;
+	</div>
+	<div style="clear:both;height: 1px;overflow:hidden;"></div>
+	<div id="loginName"><label id="loglabnametext">##START##config#configShare#loginName##STOP##</label><br>
+		<input type="text" name="userid" id="loginInput"><br>
+	</div>
+	<div id="loginPassword"><label id="loglabpasstext">##START##config#configShare#loginPassword##STOP##</label><br>
+		<input type="password" name="passwd" size="45" maxlength="45" id="loginInput"><br><br>
+		<input type="submit" name="login_submit" value="##START##config#configShare#loginSubmit##STOP##" id="loginSubmit">
+	</div>
+	<div style="clear:both;height: 1px;overflow:hidden;"></div>
+</div>
+<div id="techHelp">
+	##START##config#configShare#loginTHelp##STOP##
+</div>
+<SCRIPT type="text/javascript" LANGUAGE="JavaScript">
+	document.loginForm.userid.focus();
+</script>
+</form>
+</div>
+</body>
+</html>
+

@@ -1,0 +1,240 @@
+##inputForm##
+<div id="contentFrame"{$config[marginLeft]}>
+<campaign_x_advertiserID>
+	<div id="itemTitle" style="width:100px;">
+		<label title="{$config[campaign_advertiserIDTitle]}">{$config[campaign_advertiserIDTitle]}</label>
+	</div>
+	<div id="itemView">
+		<select name="x_advertiserID">{$config[campaign_advertiser]}</select>
+	</div>
+	<div style="clear:both;height: 1px;"></div>
+</campaign_x_advertiserID>
+	<div id="itemTitle" style="width:100px;">
+		<label title="{$config[campaign_siteIDTitle]}">{$config[campaign_siteIDTitle]}</label>
+	</div>
+	<div id="itemView">
+		<select name="x_siteID">{$config[campaign_site]}</select>
+	</div>
+	<div style="clear:both;height: 1px;"></div>
+	<div id="itemTitle" style="width:100px;">
+		<label title="{$config[campaign_zoneIDTitle]}">{$config[campaign_zoneIDTitle]}</label>
+	</div>
+	<div id="itemView">
+		<select name="x_zoneID">{$config[campaign_zone]}</select>
+	</div>
+	<div style="clear:both;height: 1px;"></div>
+	<div id="itemTitle" style="width:100px;">
+		<label title="{$config[campaign_nameTitle]}">{$config[campaign_nameTitle]}</label>
+	</div>
+	<div id="itemView">
+		<input type="text" name="x_name" size="62" maxlength="100" value="{$config[campaign_x_name]}">&nbsp;
+		{$config[campaign_x_name_Error]}
+	</div>
+	<div style="clear:both;height: 1px;"></div>
+	<div id="itemTitle" style="width:60px;">
+		<label title="{$config[campaign_activateWhenTitle]}">{$config[campaign_activateWhenTitle]}</label>
+	</div>
+	<div id="itemView">
+		<input type="text" id="x_activateWhen" name="x_activateWhen" size="20" maxlength="" value="{$config[campaign_x_activateWhen]}">&nbsp;
+	</div>
+	<div id="itemTitle" style="width:60px;">
+		<label title="{$config[campaign_deactivateWhenTitle]}">{$config[campaign_deactivateWhenTitle]}</label>
+	</div>
+	<div id="itemView">
+		<input type="text" id="x_deactivateWhen" name="x_deactivateWhen" size="20" maxlength="" value="{$config[campaign_x_deactivateWhen]}">&nbsp;
+	</div>
+	<div style="clear:both;height: 1px;"></div>
+	<div id="itemTitle" style="width:150px;">
+		<label title="{$config[campaign_playMaxNumTitle]}">{$config[campaign_playMaxNumTitle]}</label>
+	</div>
+	<div id="itemView">
+		<input type="text" name="x_playMaxNum" size="20" maxlength="20" value="{$config[campaign_x_playMaxNum]}">&nbsp;
+	</div>
+	<div id="itemTitle" style="width:60px;">
+		<label title="{$config[campaign_playCounterTitle]}">{$config[campaign_playCounterTitle]}</label>
+	</div>
+	<div id="itemView">
+		<input type="text" name="x_playCounter" size="20" maxlength="20" value="{$config[campaign_x_playCounter]}">&nbsp;
+	</div>
+	<div style="clear:both;height: 1px;"></div>
+	<div id="itemTitle" style="width:150px;">
+		<label title="{$config[campaign_clickMaxNumTitle]}">{$config[campaign_clickMaxNumTitle]}</label>
+	</div>
+	<div id="itemView">
+		<input type="text" name="x_clickMaxNum" size="20" maxlength="20" value="{$config[campaign_x_clickMaxNum]}">&nbsp;
+	</div>
+	<div id="itemTitle" style="width:60px;">
+		<label title="{$config[campaign_clickCounterTitle]}">{$config[campaign_clickCounterTitle]}</label>
+	</div>
+	<div id="itemView">
+		<input type="text" name="x_clickCounter" size="20" maxlength="20" value="{$config[campaign_x_clickCounter]}">&nbsp;
+	</div>
+	<div style="clear:both;height: 1px;"></div>
+	<div id="itemTitle" style="width:150px;">
+		<label title="{$config[campaign_priceMaxTitle]}">{$config[campaign_priceMaxTitle]}</label>
+	</div>
+	<div id="itemView">
+		<input type="text" name="x_priceMax" size="20" maxlength="20" value="{$config[campaign_x_priceMax]}">&nbsp;
+	</div>
+	<div id="itemTitle" style="width:60px;">
+		<label title="{$config[campaign_priceActualTitle]}">{$config[campaign_priceActualTitle]}</label>
+	</div>
+	<div id="itemView">
+		<input type="text" name="x_priceActual" size="20" maxlength="20" value="{$config[campaign_x_priceActual]}">&nbsp;
+	</div>
+	<div style="clear:both;height: 1px;"></div>
+<campaign_x_description>
+	<div id="itemLineTitle">
+		<label title="{$config[campaign_descriptionTitle]}">{$config[campaign_descriptionTitle]}</label>
+	</div>
+	<div style="clear:both;height: 1px;"></div>
+	<div valign="center" style="background:white;">
+		<textarea id="x_description" name="x_description">{$config[campaign_x_description]}</textarea>
+		<script language="javascript1.2" type="text/javascript">generate_wysiwyg("x_description",740,200);</script>
+	</div>
+	<div style="clear:both;height: 1px;"></div>
+</campaign_x_description>
+<campaign_x_langID>
+	<div id="itemTitle" style="width:100px;">
+		<label title="{$config[campaign_langTitle]}">{$config[campaign_langTitle]}</label>
+	</div>
+	<div id="itemView">
+		<select style="width:50;" name="x_langID">{$config[campaign_lang]}</select>
+	</div>
+	<div style="clear:both;height: 1px;"></div>
+</campaign_x_langID>
+</div>
+##/inputForm##
+##viewForm##
+<div id="contentFrame">
+<campaign_x_advertiserID>
+	<div id="itemTitle" style="width:100px;">
+		<label title="{$config[campaign_advertiserIDTitle]}">{$config[campaign_advertiserIDTitle]}</label>
+	</div>
+	<div id="itemView">
+		{$config[campaign_advertiser]}
+	</div>
+	<div style="clear:both;height: 1px;"></div>
+</campaign_x_advertiserID>
+	<div id="itemTitle" style="width:100px;">
+		<label title="{$config[campaign_siteIDTitle]}">{$config[campaign_siteIDTitle]}</label>
+	</div>
+	<div id="itemView">
+		{$config[campaign_site]}
+	</div>
+	<div style="clear:both;height: 1px;"></div>
+	<div id="itemTitle" style="width:100px;">
+		<label title="{$config[campaign_zoneIDTitle]}">{$config[campaign_zoneIDTitle]}</label>
+	</div>
+	<div id="itemView">
+		{$config[campaign_zone]}
+	</div>
+	<div style="clear:both;height: 1px;"></div>
+	<div id="itemTitle" style="width:100px;">
+		<label title="{$config[campaign_nameTitle]}">{$config[campaign_nameTitle]}</label>
+	</div>
+	<div id="itemView">
+		{$config[campaign_x_name]}&nbsp;
+	</div>
+	<div style="clear:both;height: 1px;"></div>
+	<div id="itemTitle" style="width:60px;">
+		<label title="{$config[campaign_activateWhenTitle]}">{$config[campaign_activateWhenTitle]}</label>
+	</div>
+	<div id="itemView">
+		{$config[campaign_x_activateWhen]}&nbsp;
+	</div>
+	<div id="itemTitle" style="width:60px;">
+		<label title="{$config[campaign_deactivateWhenTitle]}">{$config[campaign_deactivateWhenTitle]}</label>
+	</div>
+	<div id="itemView">
+		{$config[campaign_x_deactivateWhen]}&nbsp;
+	</div>
+	<div style="clear:both;height: 1px;"></div>
+	<div id="itemTitle" style="width:150px;">
+		<label title="{$config[campaign_playMaxNumTitle]}">{$config[campaign_playMaxNumTitle]}</label>
+	</div>
+	<div id="itemView">
+		{$config[campaign_x_playMaxNum]}&nbsp;
+	</div>
+	<div id="itemTitle" style="width:60px;">
+		<label title="{$config[campaign_playCounterTitle]}">{$config[campaign_playCounterTitle]}</label>
+	</div>
+	<div id="itemView">
+		{$config[campaign_x_playCounter]}&nbsp;
+	</div>
+	<div style="clear:both;height: 1px;"></div>
+	<div id="itemTitle" style="width:150px;">
+		<label title="{$config[campaign_clickMaxNumTitle]}">{$config[campaign_clickMaxNumTitle]}</label>
+	</div>
+	<div id="itemView">
+		{$config[campaign_x_clickMaxNum]}&nbsp;
+	</div>
+	<div id="itemTitle" style="width:60px;">
+		<label title="{$config[campaign_clickCounterTitle]}">{$config[campaign_clickCounterTitle]}</label>
+	</div>
+	<div id="itemView">
+		{$config[campaign_x_clickCounter]}&nbsp;
+	</div>
+	<div style="clear:both;height: 1px;"></div>
+	<div id="itemTitle" style="width:150px;">
+		<label title="{$config[campaign_priceMaxTitle]}">{$config[campaign_priceMaxTitle]}</label>
+	</div>
+	<div id="itemView">
+		{$config[campaign_x_priceMax]}&nbsp;
+	</div>
+	<div id="itemTitle" style="width:60px;">
+		<label title="{$config[campaign_priceActualTitle]}">{$config[campaign_priceActualTitle]}</label>
+	</div>
+	<div id="itemView">
+		{$config[campaign_x_priceActual]}&nbsp;
+	</div>
+	<div style="clear:both;height: 1px;"></div>
+<campaign_x_description>
+	<div id="itemLineTitle">
+		<label title="{$config[campaign_descriptionTitle]}">{$config[campaign_descriptionTitle]}</label>
+	</div>
+	<div style="clear:both;height: 1px;"></div>
+	<div valign="center" style="background:white;">
+		<textarea id="x_description" name="x_description">{$config[campaign_x_description]}</textarea>
+	</div>
+	<div style="clear:both;height: 1px;"></div>
+</campaign_x_description>
+<campaign_x_langID>
+	<div id="itemTitle" style="width:100px;">
+		<label title="{$config[campaign_langTitle]}">{$config[campaign_langTitle]}</label>
+	</div>
+	<div id="itemView">
+		{$config[campaign_lang]}
+	</div>
+	<div style="clear:both;height: 1px;"></div>
+</campaign_x_langID>
+</div>
+##/viewForm##
+##listHeadForm##
+<div id="listHeader">
+	<div id="itemView" style="width:200px;">{$config[campaign_nameTitle]}</div>
+<campaign_x_insertWhen>
+	<div id="itemView" style="width:200px;">{$config[campaign_insertWhenTitle]}</div>
+</campaign_x_insertWhen>
+	<div id="itemView" style="width:40px;">{$config[campaign_activeTitle]}</div>
+<campaign_x_langID>
+	<div id="itemView" style="width:70px;">{$config[campaign_langTitle]}</div>
+</campaign_x_langID>
+	<div id="itemView" style="width:170px;"></div>
+	<div style="clear:both;height: 1px;"></div>
+</div>
+##/listHeadForm##
+##listItemForm##
+<div id="listItem" class="{$config[campaign_bgcolor]}">
+	<div id="itemView" style="width:200px;">{$config[campaign_x_name]}</div>
+<campaign_x_insertWhen>
+	<div id="itemView" style="width:200px;">{$config[campaign_x_insertWhen]}</div>
+</campaign_x_insertWhen>
+	<div id="itemView" style="width:40px;">{$config[campaign_x_active]}</div>
+<campaign_x_langID>
+	<div id="itemView" style="width:70px;">{$config[campaign_x_lang]}</div>
+</campaign_x_langID>
+	<div id="itemViewRight" style="width:170px;">{$config[campaign_x_submenu]}</div>
+	<div style="clear:both;height: 1px;"></div>
+</div>
+##/listItemForm##

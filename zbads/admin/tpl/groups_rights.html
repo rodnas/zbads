@@ -1,0 +1,131 @@
+##inputForm##
+<div id="contentFrame">
+	<div id="itemTitle" style="width:100px;">
+		<label title="{$config[groups_rights_groupsIDTitle]}">{$config[groups_rights_groupsIDTitle]}</label>
+	</div>
+	<div id="itemView">
+		{$config[groups_rights_groups]}
+	</div>
+	<div style="clear:both;height: 1px;"></div>
+	<div id="itemTitle" style="width:100px;">
+		<label title="{$config[groups_rights_modulIDTitle]}">{$config[groups_rights_modulIDTitle]}</label>
+	</div>
+	<div id="itemView">
+		<select name="x_modulID">{$config[groups_rights_configs]}</select>
+		{$config[groups_rights_x_modulID_Error]}
+	</div>
+	<div style="clear:both;height: 1px;"></div>
+	<div id="itemTitle" style="width:100px;">
+		<label title="{$config[groups_rights_siteIDTitle]}">{$config[groups_rights_siteIDTitle]}</label>
+	</div>
+	<div id="itemView">
+		<select name="x_siteID">{$config[groups_rights_site]}</select>
+		{$config[groups_rights_x_siteID_Error]}
+	</div>
+	<div style="clear:both;height: 1px;"></div>
+<groups_rights_x_description>
+	<div id="itemLineTitle">
+		<label title="{$config[groups_descriptionTitle]}">{$config[groups_descriptionTitle]}</label>
+	</div>
+	<div style="clear:both;height: 1px;"></div>
+	<div valign="center" style="background:white;">
+		<textarea id="x_description" name="x_description">{$config[groups_x_description]}</textarea>
+		<script language="javascript1.2" type="text/javascript">generate_wysiwyg("x_description",740,200);</script>
+	</div>
+	<div style="clear:both;height: 1px;"></div>
+</groups_rights_x_description>
+<groups_rights_x_langID>
+	<div id="itemTitle" style="width:100px;">
+		<label title="{$config[groups_rights_langTitle]}">{$config[groups_rights_langTitle]}</label>
+	</div>
+	<div id="itemView">
+		<select style="width:50;" name="x_langID">{$config[groups_rights_lang]}</select>
+	</div>
+	<div style="clear:both;height: 1px;"></div>
+</groups_rights_x_langID>
+</div>
+##/inputForm##
+##viewForm##
+<div id="contentFrame">
+	<div id="itemTitle" style="width:100px;">
+		<label title="{$config[groups_rights_grouspIDTitle]}">{$config[groups_rights_groupsIDTitle]}</label>
+	</div>
+	<div id="itemView">
+		{$config[groups_rights_group]}
+	</div>
+	<div style="clear:both;height: 1px;"></div>
+	<div id="itemTitle" style="width:100px;">
+		<label title="{$config[groups_rights_modulIDTitle]}">{$config[groups_rights_modulIDTitle]}</label>
+	</div>
+	<div id="itemView">
+		{$config[groups_rights_configs]}
+	</div>
+	<div style="clear:both;height: 1px;"></div>
+	<div id="itemTitle" style="width:100px;">
+		<label title="{$config[groups_rights_siteIDTitle]}">{$config[groups_rights_siteIDTitle]}</label>
+	</div>
+	<div id="itemView">
+		{$config[groups_rights_site]}
+	</div>
+	<div style="clear:both;height: 1px;"></div>
+<groups_rights_x_description>
+	<div id="itemLineTitle">
+		<label title="{$config[groups_descriptionTitle]}">{$config[groups_descriptionTitle]}</label>
+	</div>
+	<div style="clear:both;height: 1px;"></div>
+	<div id="itemView">
+		{$config[groups_x_description]}
+	</div>
+	<div style="clear:both;height: 1px;"></div -->
+</groups_rights_x_description>
+<groups_rights_x_langID>
+	<div id="itemTitle" style="width:100px;">
+		<label title="{$config[groups_rights_langTitle]}">{$config[groups_rights_langTitle]}</label>
+	</div>
+	<div id="itemView">
+		{$config[groups_rights_lang]}
+	</div>
+	<div style="clear:both;height: 1px;"></div>
+</groups_rights_x_langID>
+</div>
+##/viewForm##
+##listPrevForm##
+<div id="listPrev">
+	<div id="itemView"><b>{$config[groups_prev_name]}</b></div>
+	<div style="clear:both;height: 1px;"></div>
+</div>
+##/listPrevForm##
+##listHeadForm##
+<div id="listHeader">
+	<div id="itemView" style="width:120px;">{$config[groups_rights_siteTitle]}</div>
+	<div id="itemView" style="width:120px;">{$config[groups_rights_modulTitle]}</div>
+	<div id="itemView" style="width:30px;">{$config[groups_rights_viewTitle]}</div>
+	<div id="itemView" style="width:30px;">{$config[groups_rights_addTitle]}</div>
+	<div id="itemView" style="width:30px;">{$config[groups_rights_editTitle]}</div>
+	<div id="itemView" style="width:30px;">{$config[groups_rights_deleteTitle]}</div>
+	<div id="itemView" style="width:30px;">{$config[groups_rights_adminTitle]}</div>
+	<div id="itemView" style="width:50px;margin-left:20px;">{$config[groups_rights_activeTitle]}</div>
+<groups_rights_x_langID>
+	<div id="itemView" style="width:70px;">{$config[groups_rights_langTitle]}</div>
+</groups_rights_x_langID>
+	<div id="itemView" style="width:17px;"></div>
+	<div style="clear:both;height: 1px;"></div>
+</div>
+##/listHeadForm##
+##listItemForm##
+<div id="listItem" class="{$config[groups_rights_bgcolor]}">
+	<div id="itemView" style="width:120px;">{$config[groups_rights_x_site]}</div>
+	<div id="itemView" style="width:120px;">{$config[groups_rights_x_configs]}</div>
+	<div id="itemView" style="width:30px;">{$config[groups_rights_x_view]}</div>
+	<div id="itemView" style="width:30px;">{$config[groups_rights_x_add]}</div>
+	<div id="itemView" style="width:30px;">{$config[groups_rights_x_edit]}</div>
+	<div id="itemView" style="width:30px;">{$config[groups_rights_x_delete]}</div>
+	<div id="itemView" style="width:30px;">{$config[groups_rights_x_admin]}</div>
+	<div id="itemView" style="width:50px;margin-left:20px;">{$config[groups_rights_x_active]}</div>
+<groups_rights_x_langID>
+	<div id="itemView" style="width:70px;">{$config[groups_rights_x_lang]}</div>
+</groups_rights_x_langID>
+	<div id="itemViewRight" style="width:170px;">{$config[groups_rights_x_submenu]}</div>
+	<div style="clear:both;height: 1px;"></div>
+</div>
+##/listItemForm##

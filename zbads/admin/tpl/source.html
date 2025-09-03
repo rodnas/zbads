@@ -1,0 +1,118 @@
+##inputForm##
+<div id="contentFrame"{$config[marginLeft]}>
+	<div id="itemTitle" style="width:100px;">
+		<label title="{$config[source_advertiserIDTitle]}">{$config[source_advertiserIDTitle]}</label>
+	</div>
+	<div id="itemView">
+		<select name="x_advertiserID">{$config[source_advertiser]}</select>
+	</div>
+	<div style="clear:both;height: 1px;"></div>
+	<div id="itemTitle" style="width:100px;">
+		<label title="{$config[source_siteIDTitle]}">{$config[source_siteIDTitle]}</label>
+	</div>
+	<div id="itemView">
+		<select name="x_siteID">{$config[source_site]}</select>
+	</div>
+	<div style="clear:both;height: 1px;"></div>
+	<div id="itemTitle" style="width:100px;">
+		<label title="{$config[source_nameTitle]}">{$config[source_nameTitle]}</label>
+	</div>
+	<div id="itemView">
+		<input type="text" name="x_name" size="62" maxlength="100" value="{$config[source_x_name]}">&nbsp;
+		{$config[source_x_name_Error]}
+	</div>
+	<div style="clear:both;height: 1px;"></div>
+<source_x_description>
+	<div id="itemLineTitle">
+		<label title="{$config[source_descriptionTitle]}">{$config[source_descriptionTitle]}</label>
+	</div>
+	<div style="clear:both;height: 1px;"></div>
+	<div valign="center" style="background:white;">
+		<textarea id="x_description" name="x_description">{$config[source_x_description]}</textarea>
+		<script language="javascript1.2" type="text/javascript">generate_wysiwyg("x_description",740,200);</script>
+	</div>
+	<div style="clear:both;height: 1px;"></div>
+</source_x_description>
+<source_x_langID>
+	<div id="itemTitle" style="width:100px;">
+		<label title="{$config[source_langTitle]}">{$config[source_langTitle]}</label>
+	</div>
+	<div id="itemView">
+		<select style="width:50;" name="x_langID">{$config[source_lang]}</select>
+	</div>
+	<div style="clear:both;height: 1px;"></div>
+</source_x_langID>
+</div>
+##/inputForm##
+##viewForm##
+<div id="contentFrame">
+	<div id="itemTitle" style="width:100px;">
+		<label title="{$config[source_advertiserIDTitle]}">{$config[source_advertiserIDTitle]}</label>
+	</div>
+	<div id="itemView">
+		{$config[source_advertiser]}
+	</div>
+	<div style="clear:both;height: 1px;"></div>
+	<div id="itemTitle" style="width:100px;">
+		<label title="{$config[source_siteIDTitle]}">{$config[source_siteIDTitle]}</label>
+	</div>
+	<div id="itemView">
+		{$config[source_site]}
+	</div>
+	<div style="clear:both;height: 1px;"></div>
+	<div id="itemTitle" style="width:100px;">
+		<label title="{$config[source_nameTitle]}">{$config[source_nameTitle]}</label>
+	</div>
+	<div id="itemView">
+		{$config[source_x_name]}&nbsp;
+	</div>
+	<div style="clear:both;height: 1px;"></div>
+<source_x_description>
+	<div id="itemLineTitle">
+		<label title="{$config[source_descriptionTitle]}">{$config[source_descriptionTitle]}</label>
+	</div>
+	<div style="clear:both;height: 1px;"></div>
+	<div style="float:left;text-align:left;">
+		{$config[source_x_description]}
+	</div>
+	<div style="clear:both;height: 1px;"></div>
+</source_x_description>
+<source_x_langID>
+	<div id="itemTitle" style="width:100px;">
+		<label title="{$config[source_langTitle]}">{$config[source_langTitle]}</label>
+	</div>
+	<div id="itemView">
+		<span class="baseFont">{$config[source_lang]}</span>
+	</div>
+	<div style="clear:both;height: 1px;"></div>
+</source_x_langID>
+</div>
+##/viewForm##
+##listHeadForm##
+<div id="listHeader">
+	<div id="itemView" style="width:200px;">{$config[source_nameTitle]}</div>
+<source_x_insertWhen>
+	<div id="itemView" style="width:200px;">{$config[source_insertWhenTitle]}</div>
+</source_x_insertWhen>
+	<div id="itemView" style="width:40px;">{$config[source_activeTitle]}</div>
+<source_x_langID>
+	<div id="itemView" style="width:70px;">{$config[source_langTitle]}</div>
+</source_x_langID>
+	<div id="itemView" style="width:170px;"></div>
+	<div style="clear:both;height: 1px;"></div>
+</div>
+##/listHeadForm##
+##listItemForm##
+<div id="listItem" class="{$config[source_bgcolor]}">
+	<div id="itemView" style="width:200px;">{$config[source_x_name]}</div>
+<source_x_insertWhen>
+	<div id="itemView" style="width:200px;">{$config[source_x_insertWhen]}</div>
+</source_x_insertWhen>
+	<div id="itemView" style="width:40px;">{$config[source_x_active]}</div>
+<source_x_langID>
+	<div id="itemView" style="width:70px;">{$config[source_x_lang]}</div>
+</source_x_langID>
+	<div id="itemViewRight" style="width:170px;">{$config[source_x_submenu]}</div>
+	<div style="clear:both;height: 1px;"></div>
+</div>
+##/listItemForm##

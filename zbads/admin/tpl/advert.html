@@ -1,0 +1,416 @@
+##inputForm##
+<div id="contentFrame">
+	<div id="addFrame" style="display:none;" class="shadow"><iframe class="autoHeight" src="" id="popupCode"></iframe></div>
+	<div id="itemTitle" style="width:100px;">
+		<label title="{$config[advert_advertiserIDTitle]}">{$config[advert_advertiserIDTitle]}</label>
+	</div>
+	<div id="itemView">
+		<select name="x_advertiserID" id="x_advertiserID" style="width:200px;">{$config[advert_advertiser]}</select>
+	</div>
+	<div id="itemView">
+		{$config[advert_advertiser_a]}
+</div>
+	<div style="clear:both;height: 1px;"></div>
+<advert_x_siteID>
+	<div id="itemTitle" style="width:100px;">
+		<label title="{$config[advert_siteIDTitle]}">{$config[advert_siteIDTitle]}</label>
+	</div>
+	<div id="itemView">
+		<select name="x_siteID">{$config[advert_site]}</select>
+	</div>
+	<div style="clear:both;height: 1px;"></div>
+</advert_x_siteID>
+<advert_x_adgroupID>
+	<div id="itemTitle" style="width:100px;">
+		<label title="{$config[advert_adgroupIDTitle]}">{$config[advert_adgroupIDTitle]}</label>
+	</div>
+	<div id="itemView">
+		<select name="x_adgroupID">{$config[advert_adgroup]}</select>
+	</div>
+	<div style="clear:both;height: 1px;"></div>
+</advert_x_adgroupID>
+	<div id="itemTitle" style="width:100px;">
+		<label title="{$config[advert_campaignIDTitle]}">{$config[advert_campaignIDTitle]}</label>
+	</div>
+	<div id="itemView">
+		<select name="x_campaignID" id="x_campaignID" style="width:200px;">{$config[advert_campaign]}</select>
+	</div>
+	<div id="itemView">
+		{$config[advert_campaign_a]}
+	</div>
+	<div style="clear:both;height: 1px;"></div>
+<advert_x_zoneID>
+	<div id="itemTitle" style="width:100px;">
+		<label title="{$config[advert_zoneIDTitle]}">{$config[advert_zoneIDTitle]}</label>
+	</div>
+	<div id="itemView">
+		<select name="x_zoneID">{$config[advert_zone]}</select>
+	</div>
+	<div style="clear:both;height: 1px;"></div>
+</advert_x_zoneID>
+	<div id="itemTitle" style="width:100px;">
+		<label title="{$config[advert_sourceIDTitle]}">{$config[advert_sourceIDTitle]}</label>
+	</div>
+	<div id="itemView">
+		<select name="x_sourceID" id="x_sourceID" style="width:200px;">{$config[advert_source]}</select>
+	</div>
+	<div id="itemView">
+		{$config[advert_source_a]}
+	</div>
+	<div style="clear:both;height: 1px;"></div>
+	<div id="itemTitle" style="width:100px;">
+		<label title="{$config[advert_sizeIDTitle]}">{$config[advert_sizeIDTitle]}</label>
+	</div>
+	<div id="itemView">
+		<select onchange="sizeChange();" name="x_sizeID" id="x_sizeID" style="width:200px;">{$config[advert_size]}</select>
+	</div>
+	<div id="itemView">
+		{$config[advert_size_a]}
+	</div>
+	<div style="clear:both;height: 1px;"></div>
+	<div id="itemTitle" style="width:100px;">
+		<label title="{$config[advert_nameTitle]}">{$config[advert_nameTitle]}</label>
+	</div>
+	<div id="itemView">
+		<input type="text" name="x_name" size="62" maxlength="100" value="{$config[advert_x_name]}">&nbsp;
+		{$config[advert_x_name_Error]}
+	</div>
+	<div style="clear:both;height: 1px;"></div>
+	<div id="itemTitle" style="width:100px;">
+		<label title="{$config[advert_fileNameTitle]}">{$config[advert_fileNameTitle]}</label>
+	</div>
+	<div id="itemView">
+		<input type="file" name="x_fileName" size="62" maxlength="100" value="">
+	</div>
+	<div style="clear:both;height: 1px;"></div>
+	<div style="float:center;">{$config[advert_x_fileName]}</div>
+	<div style="clear:both;height: 1px;"></div>
+<advert_x_textValue>
+	<div id="itemLineTitle">
+		<label title="{$config[advert_textValueTitle]}">{$config[advert_textValueTitle]}</label>
+	</div>
+	<div style="clear:both;height: 1px;"></div>
+	<div valign="center" style="background:white;">
+		<textarea id="x_textValue" name="x_textValue">{$config[advert_x_textValue]}</textarea>
+		<script language="javascript1.2" type="text/javascript">generate_wysiwyg("x_textValue",740,200);</script>
+	</div>
+	<div style="clear:both;height: 1px;"></div>
+</advert_x_textValue>
+	<div id="itemTitle" style="width:100px;">
+		<label title="{$config[advert_jumpURLTitle]}">{$config[advert_jumpURLTitle]}</label>
+	</div>
+	<div id="itemView">
+		<input type="text" name="x_jumpURL" size="62" maxlength="100" value="{$config[advert_x_jumpURL]}">&nbsp;
+	</div>
+	<div style="clear:both;height: 1px;"></div>
+	<div id="itemTitle" style="width:60px;">
+		<label title="{$config[advert_activateWhenTitle]}">{$config[advert_activateWhenTitle]}</label>
+	</div>
+	<div id="itemView">
+		<input id="x_activateWhen" type="text" name="x_activateWhen" size="20" maxlength="" value="{$config[advert_x_activateWhen]}">&nbsp;
+	</div>
+	<div id="itemTitle" style="width:60px;">
+		<label title="{$config[advert_deactivateWhenTitle]}">{$config[advert_deactivateWhenTitle]}</label>
+	</div>
+	<div id="itemView">
+		<input id="x_deactivateWhen" type="text" name="x_deactivateWhen" size="20" maxlength="" value="{$config[advert_x_deactivateWhen]}">&nbsp;
+	</div>
+	<div style="clear:both;height: 1px;"></div>
+	<div id="itemTitle" style="width:100px;">
+		<label title="{$config[advert_changeTimeTitle]}">{$config[advert_changeTimeTitle]}</label>
+	</div>
+	<div id="itemView">
+		<input type="text" name="x_changeTime" size="62" maxlength="100" value="{$config[advert_x_changeTime]}">&nbsp;
+	</div>
+	<div style="clear:both;height: 1px;"></div>
+	<div id="itemTitle" style="width:60px;">
+		<label title="{$config[advert_sizeWidthTitle]}">{$config[advert_sizeWidthTitle]}</label>
+	</div>
+	<div id="itemView">
+		<input type="text" id="x_sizeWidth" name="x_sizeWidth" size="20" maxlength="" value="{$config[advert_x_sizeWidth]}">&nbsp;&nbsp;
+	</div>
+	<div id="itemTitle" style="width:60px;">
+		<label title="{$config[advert_sizeHeightTitle]}">{$config[advert_sizeHeightTitle]}</label>
+	</div>
+	<div id="itemView">
+		<input type="text" id="x_sizeHeight" name="x_sizeHeight" size="20" maxlength="" value="{$config[advert_x_sizeHeight]}">&nbsp;&nbsp;
+	</div>
+	<div style="clear:both;height: 1px;"></div>
+	<div id="itemTitle" style="width:150px;">
+		<label title="{$config[advert_playMaxNumTitle]}">{$config[advert_playMaxNumTitle]}</label>
+	</div>
+	<div id="itemView">
+		<input type="text" name="x_playMaxNum" size="20" maxlength="20" value="{$config[advert_x_playMaxNum]}">&nbsp;
+	</div>
+	<div id="itemTitle" style="width:60px;">
+		<label title="{$config[advert_playCounterTitle]}">{$config[advert_playCounterTitle]}</label>
+	</div>
+	<div id="itemView">
+		<input type="text" name="x_playCounter" size="20" maxlength="20" value="{$config[advert_x_playCounter]}">&nbsp;
+	</div>
+	<div style="clear:both;height: 1px;"></div>
+	<div id="itemTitle" style="width:150px;">
+		<label title="{$config[advert_clickMaxNumTitle]}">{$config[advert_clickMaxNumTitle]}</label>
+	</div>
+	<div id="itemView">
+		<input type="text" name="x_clickMaxNum" size="20" maxlength="20" value="{$config[advert_x_clickMaxNum]}">&nbsp;
+	</div>
+	<div id="itemTitle" style="width:60px;">
+		<label title="{$config[advert_clickCounterTitle]}">{$config[advert_clickCounterTitle]}</label>
+	</div>
+	<div id="itemView">
+		<input type="text" name="x_clickCounter" size="20" maxlength="20" value="{$config[advert_x_clickCounter]}">&nbsp;
+	</div>
+	<div style="clear:both;height: 1px;"></div>
+	<div id="itemTitle" style="width:150px;">
+		<label title="{$config[advert_priceMaxTitle]}">{$config[advert_priceMaxTitle]}</label>
+	</div>
+	<div id="itemView">
+		<input type="text" name="x_priceMax" size="20" maxlength="20" value="{$config[advert_x_priceMax]}">&nbsp;
+	</div>
+	<div id="itemTitle" style="width:60px;">
+		<label title="{$config[advert_priceActualTitle]}">{$config[advert_priceActualTitle]}</label>
+	</div>
+	<div id="itemView">
+		<input type="text" name="x_priceActual" size="20" maxlength="20" value="{$config[advert_x_priceActual]}">&nbsp;
+	</div>
+	<div style="clear:both;height: 1px;"></div>
+<advert_x_description>
+	<div id="itemLineTitle">
+		<label title="{$config[advert_descriptionTitle]}">{$config[advert_descriptionTitle]}</label>
+	</div>
+	<div style="clear:both;height: 1px;"></div>
+	<div valign="center" style="background:white;">
+		<textarea id="x_description" name="x_description">{$config[advert_x_description]}</textarea>
+		<script language="javascript1.2" type="text/javascript">generate_wysiwyg("x_description",740,200);</script>
+	</div>
+	<div style="clear:both;height: 1px;"></div>
+</advert_x_description>
+<advert_x_langID>
+	<div id="itemTitle" style="width:150px;">
+		<label title="{$config[advert_langTitle]}">{$config[advert_langTitle]}</label>
+	</div>
+	<div id="itemView">
+		<select style="width:50;" name="x_langID">{$config[advert_lang]}</select>
+	</div>
+	<div style="clear:both;height: 1px;"></div>
+</advert_x_langID>
+</div>
+##/inputForm##
+##viewForm##
+<div id="contentFrame">
+	<div id="itemTitle" style="width:100px;">
+		<label title="{$config[advert_advertiserIDTitle]}">{$config[advert_advertiserIDTitle]}</label>
+	</div>
+	<div id="itemView">
+		{$config[advert_advertiser]}
+	</div>
+	<div style="clear:both;height: 1px;"></div>
+<advert_x_siteID>
+	<div id="itemTitle" style="width:100px;">
+		<label title="{$config[advert_siteIDTitle]}">{$config[advert_siteIDTitle]}</label>
+	</div>
+	<div id="itemView">
+		{$config[advert_site]}
+	</div>
+</advert_x_siteID>
+<advert_x_adgroupID>
+	<div style="clear:both;height: 1px;"></div>
+	<div id="itemTitle" style="width:100px;">
+		<label title="{$config[advert_adgroupIDTitle]}">{$config[advert_adgroupIDTitle]}</label>
+	</div>
+	<div id="itemView">
+		{$config[advert_adgroup]}
+	</div>
+	<div style="clear:both;height: 1px;"></div>
+</advert_x_adgroupID>
+	<div id="itemTitle" style="width:100px;">
+		<label title="{$config[advert_campaignIDTitle]}">{$config[advert_campaignIDTitle]}</label>
+	</div>
+	<div id="itemView">
+		{$config[advert_campaign]}
+	</div>
+	<div style="clear:both;height: 1px;"></div>
+<advert_x_zoneID>
+	<div id="itemTitle" style="width:100px;">
+		<label title="{$config[advert_zoneIDTitle]}">{$config[advert_zoneIDTitle]}</label>
+	</div>
+	<div id="itemView">
+		{$config[advert_zone]}
+	</div>
+	<div style="clear:both;height: 1px;"></div>
+</advert_x_zoneID>
+	<div id="itemTitle" style="width:100px;">
+		<label title="{$config[advert_sourceIDTitle]}">{$config[advert_sourceIDTitle]}</label>
+	</div>
+	<div id="itemView">
+		{$config[advert_source]}
+	</div>
+	<div style="clear:both;height: 1px;"></div>
+	<div id="itemTitle" style="width:100px;">
+		<label title="{$config[advert_sizeIDTitle]}">{$config[advert_sizeIDTitle]}</label>
+	</div>
+	<div id="itemView">
+		{$config[advert_size]}
+	</div>
+	<div style="clear:both;height: 1px;"></div>
+	<div id="itemTitle" style="width:100px;">
+		<label title="{$config[advert_nameTitle]}">{$config[advert_nameTitle]}</label>
+	</div>
+	<div id="itemView">
+		{$config[advert_x_name]}&nbsp;
+	</div>
+	<div style="clear:both;height: 1px;"></div>
+	<div id="itemTitle" style="width:100px;">
+		<label title="{$config[advert_fileNameTitle]}">{$config[advert_fileNameTitle]}</label>
+	</div>
+	<div id="itemView">
+		{$config[advert_x_fileName_p]}
+	</div>
+	<div style="clear:both;height: 1px;"></div>
+	<div style="float:center;">{$config[advert_x_fileName]}</div>
+	<div style="clear:both;height: 1px;"></div>
+<advert_x_textValue>
+	<div id="itemLineTitle">
+		<label title="{$config[advert_textValueTitle]}">{$config[advert_textValueTitle]}</label>
+	</div>
+	<div style="clear:both;height: 1px;"></div>
+	<div id="itemView">
+		{$config[advert_x_textValue]}
+	</div>
+	<div style="clear:both;height: 1px;"></div>
+</advert_x_textValue>
+	<div id="itemTitle" style="width:100px;">
+		<label title="{$config[advert_jumpURLTitle]}">{$config[advert_jumpURLTitle]}</label>
+	</div>
+	<div id="itemView">
+		{$config[advert_x_jumpURL]}&nbsp;
+	</div>
+	<div style="clear:both;height: 1px;"></div>
+	<div id="itemTitle" style="width:60px;">
+		<label title="{$config[advert_activateWhenTitle]}">{$config[advert_activateWhenTitle]}</label>
+	</div>
+	<div id="itemView">
+		{$config[advert_x_activateWhen]}&nbsp;&nbsp;
+	</div>
+	<div id="itemTitle" style="width:60px;">
+		<label title="{$config[advert_deactivateWhenTitle]}">{$config[advert_deactivateWhenTitle]}</label>
+	</div>
+	<div id="itemView">
+		{$config[advert_x_deactivateWhen]}&nbsp;&nbsp;
+	</div>
+	<div style="clear:both;height: 1px;"></div>
+	<div id="itemTitle" style="width:100px;">
+		<label title="{$config[advert_changeTimeTitle]}">{$config[advert_changeTimeTitle]}</label>
+	</div>
+	<div id="itemView">
+		{$config[advert_x_changeTime]}&nbsp;
+	</div>
+	<div style="clear:both;height: 1px;"></div>
+	<div id="itemTitle" style="width:60px;">
+		<label title="{$config[advert_sizeWidthTitle]}">{$config[advert_sizeWidthTitle]}</label>
+	</div>
+	<div id="itemView">
+		{$config[advert_x_sizeWidth]}&nbsp;&nbsp;
+	</div>
+	<div id="itemTitle" style="width:60px;">
+		<label title="{$config[advert_sizeHeightTitle]}">{$config[advert_sizeHeightTitle]}</label>
+	</div>
+	<div id="itemView">
+		{$config[advert_x_sizeHeight]}&nbsp;&nbsp;
+	</div>
+	<div style="clear:both;height: 1px;"></div>
+	<div id="itemTitle" style="width:150px;">
+		<label title="{$config[advert_playMaxNumTitle]}">{$config[advert_playMaxNumTitle]}</label>
+	</div>
+	<div id="itemView">
+		{$config[advert_x_playMaxNum]}&nbsp;
+	</div>
+	<div id="itemTitle" style="width:60px;">
+		<label title="{$config[advert_playCounterTitle]}">{$config[advert_playCounterTitle]}</label>
+	</div>
+	<div id="itemView">
+		{$config[advert_x_playCounter]}&nbsp;
+	</div>
+	<div style="clear:both;height: 1px;"></div>
+	<div id="itemTitle" style="width:150px;">
+		<label title="{$config[advert_clickMaxNumTitle]}">{$config[advert_clickMaxNumTitle]}</label>
+	</div>
+	<div id="itemView">
+		{$config[advert_x_clickMaxNum]}&nbsp;
+	</div>
+	<div id="itemTitle" style="width:60px;">
+		<label title="{$config[advert_clickCounterTitle]}">{$config[advert_clickCounterTitle]}</label>
+	</div>
+	<div id="itemView">
+		{$config[advert_x_clickCounter]}&nbsp;
+	</div>
+	<div style="clear:both;height: 1px;"></div>
+	<div id="itemTitle" style="width:150px;">
+		<label title="{$config[advert_priceMaxTitle]}">{$config[advert_priceMaxTitle]}</label>
+	</div>
+	<div id="itemView">
+		{$config[advert_x_priceMax]}&nbsp;
+	</div>
+	<div id="itemTitle" style="width:60px;">
+		<label title="{$config[advert_priceActualTitle]}">{$config[advert_priceActualTitle]}</label>
+	</div>
+	<div id="itemView">
+		{$config[advert_x_priceActual]}&nbsp;
+	</div>
+	<div style="clear:both;height: 1px;"></div>
+<advert_x_description>
+	<div id="itemLineTitle">
+		<label title="{$config[advert_descriptionTitle]}">{$config[advert_descriptionTitle]}</label>
+	</div>
+	<div style="clear:both;height: 1px;"></div>
+	<div id="itemView">
+		{$config[advert_x_description]}
+	</div>
+	<div style="clear:both;height: 1px;"></div>
+</advert_x_description>
+<advert_x_langID>
+	<div id="itemTitle" style="width:150px;">
+		<label title="{$config[advert_langTitle]}">{$config[advert_langTitle]}</label>
+	</div>
+	<div id="itemView">
+		{$config[advert_lang]}
+	</div>
+	<div style="clear:both;height: 1px;"></div>
+</advert_x_langID>
+</div>
+##/viewForm##
+##listHeadForm##
+<div id="listHeader">
+	<div id="itemView" style="width:160px;">{$config[advert_nameTitle]}</div>
+	<div id="itemView" style="width:80px;">{$config[advert_sourceNameTitle]}</div>
+	<div id="itemView" style="width:80px;">{$config[advert_sizeWidthTitle]}</div>
+	<div id="itemView" style="width:80px;">{$config[advert_sizeHeightTitle]}</div>
+<advert_x_insertWhen>
+	<div id="itemView" style="width:200px;">{$config[advert_insertWhenTitle]}</div>
+</advert_x_insertWhen>
+	<div id="itemView" style="width:40px;">{$config[advert_activeTitle]}</div>
+<advert_x_langID>
+	<div id="itemView" style="width:70px;">{$config[advert_langTitle]}</div>
+</advert_x_langID>
+	<div id="itemView" style="width:170px;"></div>
+	<div style="clear:both;height: 1px;"></div>
+</div>
+##/listHeadForm##
+##listItemForm##
+<div id="listItem" class="{$config[advert_bgcolor]}">
+	<div id="itemView" style="width:160px;">{$config[advert_x_name]}</div>
+	<div id="itemView" style="width:80px;">{$config[advert_x_sourceName]}</div>
+	<div id="itemView" style="width:80px;">{$config[advert_x_sizeWidth]}</div>
+	<div id="itemView" style="width:80px;">{$config[advert_x_sizeHeight]}</div>
+<advert_x_insertWhen>
+	<div id="itemView" style="width:200px;">{$config[advert_x_insertWhen]}</div>
+</advert_x_insertWhen>
+	<div id="itemView" style="width:40px;">{$config[advert_x_active]}</div>
+<advert_x_langID>
+	<div id="itemView" style="width:70px;">{$config[advert_x_lang]}</div>
+</advert_x_langID>
+	<div id="itemViewRight" style="width:170px;">{$config[advert_x_submenu]}</div>
+	<div style="clear:both;height: 1px;"></div>
+</div>
+##/listItemForm##

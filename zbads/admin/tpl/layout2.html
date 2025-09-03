@@ -1,0 +1,36 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html lang="hu">
+ <head>
+  <title>##START##config#configShare#systemTitle##STOP##</title>
+  <meta name="Description" content="##START##config#metaDescriptionHTML##STOP##">
+  <meta name="Keywords" content="##START##config#metaKeywordsHTML##STOP##">
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <meta http-equiv="content-language" content="hu">
+  <meta name="language" content="hu">
+  ##START##config#pageStartHTML##STOP##
+<script type="text/javascript" language="JavaScript">
+$(function()
+	{
+	$(document).keyup(function(e)
+		{ 
+	    	if (e.which == 27) { window.parent.popupCodeClose(); }  // esc   (does not work)
+		});
+	});
+</script>
+ </head> 
+<body class=body>
+<div id="htmlPage" align="center">
+	<div id="addFrame2">
+		<div style="height:32px;vertical-align:middle;">
+		<span id="statusText" style="margin-left:12px;">##START##config#configShare#modulName##STOP##</span>
+		<img src="##START##config#configShare#imagePath##STOP##lilanyil.png" id="purpleArrow" border="0">
+		<span id="statusText" style="margin-left:5px;">##START##config#configShare#actionName##STOP##</span>
+		</div>
+	<div style="clear:both;height: 2px;background-color:white"></div>
+	##START##config#formStartHTML##STOP##
+	##START##config#contentHTML##STOP##
+	##START##config#formStopHTML##STOP##
+	</div>
+</div>
+</body>
+</html>

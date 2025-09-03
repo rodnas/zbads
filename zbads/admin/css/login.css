@@ -1,0 +1,13 @@
+form {padding:0;margin:0;}
+#htmlPage {margin:0 auto 0 auto;width:100%;font-family:"Trebuchet MS";}
+#loginBox {fixed:50%;width:391px;height:282px;padding: 0;margin-top:-100px;border: 0;font-family: "Trebuchet MS"; font-size: 14px;text-decoration: none;background-image:url(../../admin/img/loginbox.png);background-repeat:no-repeat;z-index:1001;}
+#topHeaderBox {width:100%;height:24px;border: 0;margin-top:200px;font-family: "Arial"; font-size: 14px;text-decoration: none;background:transparent url(../../admin/img/loginline.png) no-repeat;z-index:1000;}
+#loginError {font-family:"Trebuchet MS";font-size:14px;color:red;padding-top:100px;}
+#loginName {text-align:center;position:relative;padding-top:0px;border: 0;text-decoration: none;z-index:1001;font-family:"Trebuchet MS";font-size:12px;color:#606060}
+#loglabnametext {margin-left:-186px;}
+#loginPassword {text-align:center;position:relative;margin-top:5px;border: 0;text-decoration: none;z-index:1001;font-family:Trebuchet MS;font-size:12px;color:#606060}
+#loglabpasstext {margin-left:-246px;}
+#loginSubmit {float:right;z-index:1001;font-family:"Trebuchet MS";font-size:14px;color:#606060;margin-right:50px;}
+#techHelp {z-index:1001;font-family:"Trebuchet MS";font-size:12px;color:#606060;margin-top:-10px;}
+#loginInput {font-family:"Trebuchet MS";font-size:14px;border: 1px solid #929292;width:285px;}
+
